@@ -64,7 +64,7 @@ class ScheduleController extends AbstractActionController
 
     public function schedulesAction()
     {
-        $start = new DateTime('-2 weeks');
+        $start = new DateTime;
         $end = new DateTime('+12 months');
 
         $blob = 300;
