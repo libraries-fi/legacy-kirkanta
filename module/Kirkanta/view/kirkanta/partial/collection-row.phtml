@@ -1,0 +1,12 @@
+<?php
+$id = str_replace(['[', ']'], '-', $fieldset->getName());
+?>
+<fieldset class="form-collection-row" id="<?= $id ?>">
+  <legend class="accordion-expand-row"><?= $this->escapeHtml($fieldset->getTitle()) ?></legend>
+  <button type="button" class="delete-custom-data accordion-delete-row btn btn-link btn-sm" value="#<?= $id ?>"><i class="glyphicon glyphicon-remove-circle"></i></button>
+  <div class="accordion-content">
+    <?php foreach ($fieldset as $element): ?>
+      <?= $this->samuFormFieldset()->child($element, $options) ?>
+    <?php endforeach ?>
+  </div>
+</fieldset>

@@ -1,0 +1,49 @@
+<?php if ($this->formMessages()->hasMessages()): ?>
+  <div class="status-messages">
+    <?= $this->formMessages()->render('form.success') ?>
+    <?= $this->formMessages()->render('form.error') ?>
+  </div>
+<?php endif ?>
+
+<p><?= $this->tr('Here you can configure how this document will be synchronized to PTV (Suomi.fi).') ?>
+
+<?= $this->samuForm()->openTag($form) ?>
+
+<fieldset class="panel panel-default">
+  <legend><?= $this->tr('Status') ?></legend>
+  <?= $this->samuFormRow($form->get('enabled')) ?>
+
+  <?php if ($this->meta->getLastSync()): ?>
+    <ul>
+      <li><?= sprintf('%s: %s', $this->tr('Identifier'), $this->meta->getPtvIdentifier()) ?></li>
+      <li><?= sprintf('%s: %s', $this->tr('Last sync'), $this->meta->getLastSync()->format('Y-m-d H:i')) ?></li>
+    </ul>
+  <?php endif ?>
+</fieldset>
+
+<fieldset class="panel panel-default">
+  <legend><?= $this->tr('Settings') ?></legend>
+  <input type="hidden" name="published" value="<?= $form->get('published')->getValue() ?>"/>
+  <?= $this->samuForm()->fields($form, ['published', 'method']) ?>
+</fieldset>
+
+<fieldset class="panel panel-default">
+  <legend ><?= $this->tr('Validation') ?></legend>
+  <div class="panel-body" data-app="ptv-validate" data-url="<?= $this->url('kirkanta_ptv/validate', [
+    'type' => 'organisation',
+    'id' => $this->entity->getId()
+  ]) ?>">
+
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+</fieldset>
+
+<div>
+  <button type="submit" class="btn btn-primary"><?= $this->tr('Save') ?></button>
+  <a href="<?= $this->url('organisation/edit', ['organisation_id' => $this->entity->getId()]) ?>" class="btn btn-link"><?= $this->tr('Cancel') ?></a>
+</div>
+
+<?= $this->samuForm()->closeTag($form) ?>

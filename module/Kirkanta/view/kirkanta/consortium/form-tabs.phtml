@@ -1,0 +1,16 @@
+<nav>
+  <ul class="nav nav-tabs">
+    <?php foreach ($tabs as $id => $tab): ?>
+      <?php
+      $tab_class = [
+        true => '',
+        $tab->disabled => 'class="disabled"',
+        $active == $id => 'class="active"',
+      ];
+      ?>
+      <li role="presentation" <?= $tab_class[true] ?>>
+        <a <?php if (!$tab->disabled): ?> href="<?= $this->url($tab->route, $tab->params, true) ?>"<?php endif ?>><?= $tab->title ?></a>
+      </li>
+    <?php endforeach ?>
+  </ul>
+</nav>

@@ -1,0 +1,23 @@
+<style>
+  dl {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  dd {
+    margin-left: 3rem;
+    display: list-item;
+  }
+</style>
+
+<?php if ($result): ?>
+  <dl>
+    <?php foreach ($result as $class => $errors): ?>
+      <dt><?= $class ?></dt>
+      <?php foreach ($errors as $row): ?>
+        <dd><?= $row ?></dd>
+      <?php endforeach ?>
+    <?php endforeach ?>
+  </dl>
+<?php else: ?>
+  <p>No errors, everything is OK!</p>
+<?php endif ?>

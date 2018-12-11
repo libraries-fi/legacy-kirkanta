@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Library Directory 1.0\n"
+"Report-Msgid-Bugs-To: toimitus2@kirjastot.fi\n"
+"POT-Creation-Date: 2015-11-30 14:09+0200\n"
+"PO-Revision-Date: 2015-12-01 11:22+0200\n"
+"Last-Translator: Samu Juvonen <samu.juvonen@gmail.com>\n"
+"Language-Team: Kirjastot.fi <toimitus2@kirjastot.fi>\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "The Foobar"
+msgstr "Se Foobar"
+
+msgid "Value is required and can't be empty"
+msgstr "Ett värde är obligatoriskt"
+
+msgid "The input is less than %min% characters long"
+msgstr "Värdet måste ha minst %min% tecken"
+
+msgid "The input is more than %max% characters long"
+msgstr "Värdet får ha max. %max% tecken "
+
+msgid "The input must contain only digits"
+msgstr "Endast siffor är tillåtna"
+
+msgid "The input does not appear to be a valid date"
+msgstr "Datumet är ogiltigt"
+
+msgid "The input does not fit the date format '%format%'"
+msgstr "Ange datum i formatet '%format%'"
+
+msgid "The input is not between '%min%' and '%max%', inclusively"
+msgstr "Värdet måste vara mellan '%min%' and '%max%'"
+
+msgid "The input does not appear to be a valid Uri"
+msgstr "Webbadressen är ogiltig "
+
+msgid "File exceeds the defined ini size"
+msgstr "Filen är för stor"
+
+msgid ""
+"The input is not a valid email address. Use the basic format local-"
+"part@hostname"
+msgstr "E-postadressen är ogiltig "
+
+msgid "File has an incorrect extension"
+msgstr "Filformatet är ogiltigt"

@@ -1,0 +1,33 @@
+<h2><?= $service_type->getName() ?></h2>
+
+<ul>
+  <?php if (!count($services)): ?>
+    <li><?= $this->tr('Empty') ?></li>
+  <?php endif ?>
+
+  <?php foreach ($services as $service): ?>
+    <?php $organisation = $service->getOrganisation(); ?>
+
+    <?php if ($organisation): ?>
+      <?php $edit_url = $this->url('organisation/resources/edit', [
+        'organisation_id' => $organisation->getId(),
+        'section' => 'services',
+        'id' => $service->getId()
+      ]);
+      ?>
+      <li>
+        <b><?= $this->escapeHtml($service->getOrganisation()->getName()) ?></b>
+        <a href="<?= $edit_url ?>">#<?= $service->getId() ?></a>
+      </li>
+    <?php else: ?>
+      <?php $edit_url = $this->url('service/edit', [
+        'id' => $service->getId()
+      ]);
+      ?>
+      <li>
+        <b><?= strtoupper($this->tr('Service template')) ?></b>
+        <a href="<?= $edit_url ?>">#<?= $service->getId() ?></a>
+      </li>
+    <?php endif ?>
+  <?php endforeach ?>
+</ul>

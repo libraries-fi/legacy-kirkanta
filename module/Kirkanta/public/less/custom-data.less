@@ -1,0 +1,50 @@
+fieldset.input-custom-data.form-collection {
+  position: relative;
+
+  button.add-custom-data {
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
+  }
+}
+
+fieldset.custom-data {
+  clear: left;
+  border-bottom: 1px solid white;
+  padding: 0;
+  margin-bottom: 0;
+
+  legend {
+    margin-left: 1rem;
+    // margin-bottom: 1rem;
+    top: 0;
+  }
+  button.delete-custom-data {
+    position: absolute;
+    right: 0;
+    margin-top: -53px;
+    font-size: 20px;
+    color: red;
+  }
+  .accordion-expand-row {
+    cursor: pointer;
+  }
+  .accordion-content {
+    background-color: rgba(100, 100, 100, 0.1);
+    padding: 1rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  &.expanded {
+    .accordion-content {
+      display: block;
+    }
+  }
+}
+
+body.no-js {
+  .accordion-content {
+    display: block;
+  }
+}

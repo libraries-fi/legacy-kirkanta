@@ -1,0 +1,59 @@
+<?php
+
+$form = $this->changeEmailForm;
+$form->add([
+  'name' => 'submit',
+  'type' => 'button',
+  'options' => [
+    'label' => $this->tr('Save'),
+  ],
+  'attributes' => [
+    'type' => 'submit',
+  ],
+]);
+$form->add([
+  'name' => 'cancel',
+  'type' => 'button',
+  'options' => [
+      'button_role' => 'link',
+      'label' => $this->tr('Cancel'),
+      'route' => [
+        'route' => 'zfcuser',
+        'params' => [],
+      ],
+  ],
+  'attributes' => [
+      'type' => 'link',
+  ],
+]);
+$form->prepare();
+$form->setAttribute('action', $this->url('zfcuser/changeemail'));
+
+?>
+
+<div class="row">
+  <div class="col-md-12">
+    <h3><?= $this->tr('Change email') ?></h3>
+    <p><b class="form-label"><?= $this->tr('Username') ?>:</b> <?= $this->identity()->getUsername() ?></p>
+
+    <?php if ($status): ?>
+      <div class="alert alert-success"><?= $this->tr('Email address changed successfully.') ?></div>
+    <?php endif ?>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6">
+    <?= $this->samuForm()->openTag($form) ?>
+    <?= $this->samuFormRow($form->get('newIdentity')) ?>
+    <?= $this->samuFormRow($form->get('newIdentityVerify')) ?>
+
+    <fieldset class="form-confirmation form-group">
+      <legend><?= $this->tr('Confirm change') ?></legend>
+      <?= $this->samuFormInput($form->get('credential')->setAttribute('placeholder', $this->tr('Confirm with password'))) ?>
+    </fieldset>
+
+    <?= $this->samuFormActions($form) ?>
+    <?= $this->samuForm()->closeTag($form) ?>
+  </div>
+</div>

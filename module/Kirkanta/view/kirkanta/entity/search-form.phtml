@@ -1,0 +1,15 @@
+<?php
+$form->prepare();
+?>
+
+<div class="search-form-container">
+  <div class="row">
+    <?= $this->samuForm()->openTag($form) ?>
+    <?php foreach ($form as $field): ?>
+      <div class="col-md-3 col-sm-6">
+        <?= $this->samuFormRow($field) ?>
+      </div>
+    <?php endforeach ?>
+    <?= $this->samuForm()->closeTag($form) ?>
+  </div>
+</div>

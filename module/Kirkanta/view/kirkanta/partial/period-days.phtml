@@ -1,0 +1,9 @@
+<fieldset id="input-group-days" class="form-collection">
+  <legend><?= $this->tr('Days') ?></legend>
+  <span class="template" data-template="<?= $this->escapeHtmlAttr($this->render('kirkanta/partial/period-days-row', ['fieldset' => $fieldset->getTemplateElement()])) ?>"></span>
+  <div class="container-fluid">
+    <?php foreach ($fieldset as $i => $child): ?>
+      <?= $this->samuFormRow($child) ?>
+    <?php endforeach ?>
+  </div>
+</fieldset>

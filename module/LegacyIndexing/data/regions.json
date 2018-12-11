@@ -1,0 +1,114 @@
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 20,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "ahvenanmaa",
+      "_score" : 1.0, "_source" : {"name_en":"\u00c5land Islands","name_fi":"Ahvenanmaa","name_sv":"\u00c5land"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "etelasavo",
+      "_score" : 1.0, "_source" : {"name_en":"Southern Savonia","name_fi":"Etel\u00e4-Savo","name_sv":"S\u00f6dra Savolax"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "kouvola",
+      "_score" : 1.0, "_source" : {"name_en":"Kymenlaakso","name_fi":"Kymenlaakso","name_sv":"Kymmenedalen"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "lappeenranta",
+      "_score" : 1.0, "_source" : {"name_en":"South Karelia","name_fi":"Etel\u00e4-Karjala","name_sv":"S\u00f6dra Karelen"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "pohjoissavo",
+      "_score" : 1.0, "_source" : {"name_en":"Northern Savonia","name_fi":"Pohjois-Savo","name_sv":"Norra Savolax"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "varsinaissuomi",
+      "_score" : 1.0, "_source" : {"name_en":"Southwest Finland","name_fi":"Varsinais-Suomi","name_sv":"Egentliga Finland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "hame",
+      "_score" : 1.0, "_source" : {"name_en":"Tavastia Proper","name_fi":"H\u00e4me","name_sv":"Egentliga Tavastland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "satakunta",
+      "_score" : 1.0, "_source" : {"name_en":"Satakunta","name_fi":"Satakunta","name_sv":"Satakunda"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "uusimaa",
+      "_score" : 1.0, "_source" : {"name_en":"Uusimaa","name_fi":"Uusimaa","name_sv":"Nyland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "lahti",
+      "_score" : 1.0, "_source" : {"name_en":"P\u00e4ij\u00e4nne Tavastia","name_fi":"P\u00e4ij\u00e4t-H\u00e4me","name_sv":"P\u00e4ij\u00e4nne-Tavastland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "lappi",
+      "_score" : 1.0, "_source" : {"name_en":"Lapland","name_fi":"Lappi","name_sv":"Lappland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "pirkanmaa",
+      "_score" : 1.0, "_source" : {"name_en":"Pirkanmaa","name_fi":"Pirkanmaa","name_sv":"Birkaland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "pohjoiskarjala",
+      "_score" : 1.0, "_source" : {"name_en":"North Karelia","name_fi":"Pohjois-Karjala","name_sv":"Norra Karelen"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "kokkola",
+      "_score" : 1.0, "_source" : {"name_en":"Central Ostrobothnia","name_fi":"Keski-Pohjanmaa","name_sv":"Mellersta \u00d6sterbotten"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "oulu",
+      "_score" : 1.0, "_source" : {"name_en":"Northern Ostrobothnia","name_fi":"Pohjois-Pohjanmaa","name_sv":"Norra \u00d6sterbotten"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "seinajoki",
+      "_score" : 1.0, "_source" : {"name_en":"Southern Ostrobothnia","name_fi":"Etel\u00e4-Pohjanmaa","name_sv":"S\u00f6dra \u00d6sterbotten"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "vaasa",
+      "_score" : 1.0, "_source" : {"name_en":"Ostrobothnia","name_fi":"Pohjanmaa","name_sv":"\u00d6sterbotten"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "kainu",
+      "_score" : 1.0, "_source" : {"name_en":"Kainuu","name_fi":"Kainuu","name_sv":"Kajanaland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "keskisuomi",
+      "_score" : 1.0, "_source" : {"name_en":"Central Finland","name_fi":"Keski-Suomi","name_sv":"Mellersta Finland"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "region",
+      "_id" : "keskuskirjasto",
+      "_score" : 1.0, "_source" : {"name_en":"Central Library","name_fi":"Keskuskirjasto","name_sv":"Centrumbiblioteket"}
+    } ]
+  }
+}

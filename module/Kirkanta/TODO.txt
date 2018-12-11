@@ -1,0 +1,18 @@
+-- KIRKANTA --
+[ ] Kuvien järjestyksen muuttaminen.
+[ ] Puhelinnumeroiden järjestyksen muuttaminen.
+[ ] "Yhteystiedot-tietue".
+[ ] Aukiolotietojen syöttämisen yksinkertaistaminen.
+[ ] Lomakkeelle varoitus tallentamattomista tiedoista.
+[ ] Puhelinnumeroiden normalisointi tallennettaessa. (Tai tallennetaan pelkät numerot ja normalisoidaan näyttäessä.)
+[ ] Osoitteisiin lisäkenttä ylimääräiselle kulkuohjeelle.
+[ ] Kirjaston tietoihin kenttä väliaikaiselle huomiotekstille.
+[x] HelMet-kikan päivitys.
+
+-- API --
+[ ] Palveluiden filtteröinti kunta- ja kimppatiedon perusteella.
+
+-- NOTES --
+- Poikkeusaukiolojen konsepti
+- Aukiolojen syöttäminen kaikille 'osastoille' yhdellä kertaa samalla jakson pituudella?
+- Palvelukonseptin uudistaminen

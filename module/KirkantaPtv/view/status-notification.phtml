@@ -1,0 +1,30 @@
+<?php
+
+use Kirkanta\Ptv\Entity\Meta;
+
+$route_params = [
+  'type' => 'organisation',
+  'id' => $this->id,
+];
+
+?>
+<div class="well">
+  <?php if ($this->meta): ?>
+    <?php if (!$this->meta->isEnabled()): ?>
+      <i class="glyphicon glyphicon-info-sign"></i>
+      <?= $this->tr('PTV synchronization is disabled for this document.') ?>
+    <?php elseif ($this->meta->getMethod() == Meta::METHOD_AUTOMATIC): ?>
+      <i class="glyphicon glyphicon-ok-circle"></i>
+      <?= $this->tr('This document will be synchronized with PTV automatically.') ?>
+    <?php else: ?>
+      <i class="glyphicon glyphicon-ok-circle"></i>
+      <?= $this->tr('You will need to trigger PTV synchronization manually.') ?>
+      <a class="btn btn-sm btn-default" href="<?= $this->url('kirkanta_ptv/synchronize', $route_params) ?>"><?= $this->tr('Synchronize') ?></a>
+    <?php endif ?>
+  <?php else: ?>
+    <i class="glyphicon glyphicon-exclamation-sign"></i>
+    <?= $this->tr('This document has not been configured for PTV yet.') ?>
+  <?php endif ?>
+
+  <a class="btn btn-link pull-right" href="<?= $this->url('kirkanta_ptv/configure', $route_params) ?>"><?= $this->tr('Configuration') ?></a>
+</div>

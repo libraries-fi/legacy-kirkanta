@@ -1,0 +1,3 @@
+<?php foreach ($actions as $action): ?>
+  <a class="btn btn-primary" href="<?= $this->url($action['route'], $action['params']) ?>"><?= $this->escapeHtml($action['label']) ?></a>
+<?php endforeach ?>

@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><?= $this->tr('Results') ?></div>
+  <div class="panel-body">
+    <dl>
+      <dt><?= $this->tr('Status') ?></dt>
+      <dd><?= $this->status ?></dd>
+      <?php if ($this->errors): ?>
+        <dt><?= $this->tr('Errors') ?></dt>
+        <?php foreach ($this->errors as $lang => $errors): ?>
+          <dt><?= $lang ?></dt>
+          <?php foreach ($errors as $error): ?>
+            <dd><?= $this->escapeHtml($error) ?></dd>
+          <?php endforeach ?>
+        <?php endforeach ?>
+      <?php endif ?>
+    </dl>
+  </div>
+</div>

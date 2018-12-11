@@ -1,0 +1,13 @@
+<?php
+$legend = $fieldset->get('title')->getValue() ?: ($fieldset->get('id')->getValue() ?: $this->tr('New data'));
+$id = str_replace(['[', ']'], '-', $fieldset->getName());
+?>
+<fieldset class="custom-data" id="<?= $id ?>">
+  <legend class="accordion-expand-row"><?= $this->escapeHtml($legend) ?></legend>
+  <button type="button" class="delete-custom-data accordion-delete-row btn btn-link btn-sm" value="#<?= $id ?>"><i class="glyphicon glyphicon-remove-circle"></i></button>
+  <div class="accordion-content">
+    <?php foreach ($fieldset as $element): ?>
+      <?= $this->samuFormFieldset()->child($element, $options) ?>
+    <?php endforeach ?>
+  </div>
+</fieldset>

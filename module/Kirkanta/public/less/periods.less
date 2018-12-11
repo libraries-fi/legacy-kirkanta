@@ -1,0 +1,122 @@
+#period-form {
+  .form-collection-row {
+    border-width: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
+  input[disabled] + .period-calendar-wrap {
+    opacity: 0.5;
+  }
+
+  #field-all-closed {
+    @media (min-width: @screen-md-min) {
+      // padding-bottom: 260px;
+    }
+  }
+
+  #field-valid-from,
+  #field-valid-until {
+    min-width: 240px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    transition: 0.3s opacity;
+
+    @media (min-width: @screen-sm-min) {
+      width: 240px;
+    }
+    @media (min-width: @screen-md-min) {
+      width: 360px;
+      // margin-top: -260px;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: 450px;
+    }
+    &.disabled {
+      opacity: 0.3;
+    }
+    label {
+      display: block;
+    }
+  }
+
+  input[name="valid_from"],
+  input[name="valid_until"] {
+    display: none;
+  }
+
+  #period-slider-wrap {
+    min-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // position: absolute;
+    // margin-right: @grid-gutter-width / 2;
+  }
+
+  .times-row {
+    label {
+      display: none;
+    }
+
+    label.filler {
+      visibility: hidden;
+    }
+
+    .input-days-times-add-time {
+      display: none;
+    }
+
+    &:first-child {
+      label {
+        display: block;
+      }
+      .input-days-times-add-time {
+        display: inline;
+      }
+      .input-days-times-remove-time {
+        // display: none;
+      }
+    }
+  }
+
+  .times-collection-closed {
+    display: none;
+  }
+
+  .times-collection-empty {
+    .times-collection-closed {
+      display: block;
+    }
+  }
+
+  .input-days-times-add-time {
+    text-decoration: none;
+    outline: none;
+    color: @text-color;
+
+    &:hover {
+      color: @link-color;
+    }
+  }
+
+  .input-days-times-remove-time {
+    text-decoration: none;
+    outline: none;
+    color: @btn-danger-bg;
+
+    &:hover {
+      color: @link-color;
+    }
+  }
+
+  .toggle-edit-days-info {
+    padding: 0;
+  }
+}
+
+.kirkanta-form-periodsearchform {
+  .field-withexpired {
+    padding-top: 30px;
+  }
+}

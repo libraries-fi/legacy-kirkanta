@@ -1,0 +1,1 @@
+Provides support for indexing the original data in Postgres to Elasticsearch. Most indexing instructions are annotated directly into the entity classes, but some more complex cleanups are performed in event listeners.

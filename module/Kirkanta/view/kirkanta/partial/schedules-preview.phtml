@@ -1,0 +1,44 @@
+<?php
+$range = array_chunk(array_chunk($this->range, 7), 6);
+?>
+
+<div class="container-fluid">
+  <div class="row">
+    <?php foreach ($range as $i => $chunk): ?>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <table class="schedules-preview table-<?= $i + 1 ?>">
+          <thead>
+            <tr>
+              <th></th>
+              <th><?= $this->tr('Mon') ?></th>
+              <th><?= $this->tr('Tue') ?></th>
+              <th><?= $this->tr('Wed') ?></th>
+              <th><?= $this->tr('Thu') ?></th>
+              <th><?= $this->tr('Fri') ?></th>
+              <th><?= $this->tr('Sat') ?></th>
+              <th><?= $this->tr('Sun') ?></th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php foreach ($chunk as $rows): ?>
+              <tr>
+                <th><?= date('W', strtotime($rows[0]['date'])) ?></th>
+                <?php foreach ($rows as $row): ?>
+                  <td title="<?= $row['date'] . (' – ' . $row['info']['fi'] ?: '') ?>">
+                    <?php if ($row['opens']): ?>
+                      <time><?= $row['opens'] ?></time>
+                      <time><?= $row['closes'] ?></time>
+                    <?php else: ?>
+                      <span>&nbsp;</span>
+                      <span>&nbsp;</span>
+                    <?php endif ?>
+                  </td>
+                <?php endforeach ?>
+              </tr>
+            <?php endforeach ?>
+          </tbody>
+        </table>
+      </div>
+    <?php endforeach ?>
+  </div>
+</div>

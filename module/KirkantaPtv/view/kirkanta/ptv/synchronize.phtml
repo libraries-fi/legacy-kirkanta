@@ -1,0 +1,46 @@
+<form data-app="ptv-sync" data-ptv-trigger="<?= (int)empty($this->status) ?>" method="post" class="panel panel-default">
+  <div class="panel-heading">
+    <label for="submit-button"><?= $this->tr('Run synchronization') ?></label>
+  </div>
+
+  <?php if (!$this->status): ?>
+    <input type="hidden" name="ptv_trigger" value="1"/>
+  <?php endif ?>
+
+  <div class="panel-body">
+    <button type="submit" id="submit-button"><?= $this->tr('Synchronize') ?></button>
+  </div>
+</form>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><?= $this->tr('Results') ?></div>
+
+  <div class="panel-body" id="status-messages">
+    <dl>
+      <?php if ($this->status): ?>
+        <dt><?= $this->tr('Status') ?></dt>
+        <dd><?= $this->status ?></dd>
+      <?php endif ?>
+
+      <?php if ($this->errors): ?>
+        <dt><?= $this->tr('Errors') ?></dt>
+
+        <?php foreach ($this->errors as $lang => $errors): ?>
+          <dt><?= $lang ?></dt>
+          <?php foreach ($errors as $error): ?>
+            <dd><?= $this->escape($error) ?></dd>
+          <?php endforeach ?>
+        <?php endforeach ?>
+
+      <?php endif ?>
+    </dl>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <a href="<?= $this->url('organisation/edit', [
+      'organisation_id' => $this->id
+    ]) ?>">« <?= $this->tr('Return') ?></a>
+  </div>
+</div>

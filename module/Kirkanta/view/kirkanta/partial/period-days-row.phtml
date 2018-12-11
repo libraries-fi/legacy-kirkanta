@@ -1,0 +1,44 @@
+<?php
+
+use Kirkanta\I18n\Form\TranslationFormMessages;
+
+$info_opts = [
+  'translations' => $fieldset->get('translations')->getContainer(),
+  'locale' => 'fi',
+  'tr_messages' => new TranslationFormMessages($fieldset->get('translations')->getMessages()),
+];
+?>
+
+<fieldset class="row form-collection-row <?php if (!count($fieldset->get('times'))): ?>times-collection-empty<?php endif ?>">
+  <div class="col-md-2">
+    <label class="day-name"></label>
+  </div>
+  <div class="col-md-10">
+    <div class="container-fluid">
+      <div class="row times-collection">
+        <span class="template" data-template="<?= $this->escapeHtmlAttr(
+          $this->render('kirkanta/partial/period-day-times-row', ['fieldset' => $fieldset->get('times')->getTemplateElement()])
+        ) ?>"></span>
+        <div class="col-md-12 times-collection-closed">
+          <p>
+            <strong><?= $this->tr('Library closed') ?></strong>
+            <button type="button" name="insert-first-time" value="<?= $fieldset->getName() ?>" class="input-days-insert-first-time btn btn-link" title="<?= $this->tr('Insert new time') ?>">
+              (<?= $this->tr('Insert new time') ?>)
+            </button>
+          </p>
+        </div>
+        <div class="container-fluid day-times">
+          <?php foreach ($fieldset->get('times') as $times): ?>
+            <?= $this->render('kirkanta/partial/period-day-times-row', ['fieldset' => $times]) ?>
+          <?php endforeach ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-6 field-days-info-wrap <?= strlen($fieldset->get('info')->getValue()) ? 'enabled' : ''?>">
+          <button type="button" class="toggle-edit-days-info btn-link"><?= $this->tr('Edit description...') ?></button>
+          <?= $this->samuFormRow($fieldset->get('info'), $info_opts) ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</fieldset>

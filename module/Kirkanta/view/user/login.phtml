@@ -1,0 +1,11 @@
+<?php
+$loginForm->prepare();
+$loginForm->setAttribute('action', $this->url('zfcuser/login'));
+$loginForm->setAttribute('method', 'post');
+$loginForm->setAttribute('class', 'login-form');
+?>
+
+<div class="col-md-4 col-md-offset-4">
+  <h2><?= $this->tr('Login') ?></h2>
+  <?= $this->samuForm($loginForm) ?>
+</div>

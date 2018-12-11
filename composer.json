@@ -1,0 +1,24 @@
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "alpha",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "doctrine/common": "~2.6.01",
+        "zendframework/zendframework": "^2.5",
+        "doctrine/doctrine-orm-module": "^1.0",
+        "zf-commons/zfc-user-doctrine-orm": "dev-master",
+        "bjyoungblood/bjy-authorize": "1.4.*",
+        "rwoverdijk/assetmanager": "1.*",
+        "imagine/imagine": "dev-master",
+        "elasticsearch/elasticsearch": "~1.0",
+        "html2text/html2text": "^4.0",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

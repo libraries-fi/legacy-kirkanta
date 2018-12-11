@@ -1,0 +1,1 @@
+Temporary utility made for cleaning up the collection of services in the database. Due to migrating data from a legacy database, there are huge amount of services with similar names, and they need to be merged into one instance.

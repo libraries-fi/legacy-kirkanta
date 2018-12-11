@@ -1,0 +1,80 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "analysis": {
+        "analyzer": {
+          "whitespace_only": {
+            "tokenizer": "whitespace",
+            "filter": "lowercase"
+          }
+        }
+      }
+    }
+  },
+  "mappings" : {
+    "opening_time": {
+      "properties": {
+        "organisation": {
+          "type": "integer"
+        },
+        "period": {
+          "type": "integer"
+        },
+        "date": {
+          "type" : "date",
+          "format" : "date"
+        },
+        "day": {
+          "type": "integer",
+          "index": "no"
+        },
+        "opens": {
+          "type" : "date",
+          "format" : "hourMinute"
+        },
+        "closes": {
+          "type" : "date",
+          "format" : "hourMinute"
+        },
+        "times": {
+          "properties": {
+            "opens": {
+              "type" : "date",
+              "format" : "hourMinute"
+            },
+            "closes": {
+              "type" : "date",
+              "format" : "hourMinute"
+            }
+          }
+        },
+        "info": {
+          "properties": {
+            "fi": {
+              "type": "string",
+              "index": "no"
+            },
+            "en": {
+              "type": "string",
+              "index": "no"
+            },
+            "ru": {
+              "type": "string",
+              "index": "no"
+            },
+            "se": {
+              "type": "string",
+              "index": "no"
+            },
+            "sv": {
+              "type": "string",
+              "index": "no"
+            }
+          }
+        }
+      }
+    }
+  }
+}

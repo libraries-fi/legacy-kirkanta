@@ -1,0 +1,266 @@
+
+body.no-js {
+  #period-form {
+    input[name="valid_from"],
+    input[name="valid_until"] {
+      display: initial;
+    }
+  }
+}
+
+form {
+  button:disabled {
+    opacity: .5;
+  }
+  .errors {
+    color: red;
+  }
+  .form-group.error {
+    input,
+    select,
+    button {
+      box-shadow: 0 0 2px red;
+      border-color: #FF9494;
+    }
+  }
+  .form-header {
+    margin-bottom: 15px;
+  }
+  .kirkanta-form-picture {
+    width: 100%;
+    max-height: 280px;
+    overflow: auto;
+    img {
+      width: 100%;
+    }
+    figcaption {
+      display: none;
+    }
+
+    &.size-small {
+      img {
+        width: auto;
+      }
+    }
+  }
+  .form-required {
+    label:after {
+      content: ' *';
+      color: red;
+    }
+  }
+  .form-title {
+    margin-top: 0;
+  }
+  .form-group {
+/*     max-width: 600px; */
+  }
+}
+
+form.document-form {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  #field-language {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+#organisation-form {
+  #field-language {
+    position: static;
+    top: auto;
+    right: auto;
+  }
+  .form-header {
+    .form-group {
+    }
+    .form-actions {
+/*       padding-top: 25px; */
+      position: absolute;
+      top: 5px;
+      right: 15px;
+    }
+  }
+}
+
+input.disabled {
+  opacity: 0.5;
+}
+
+label.nested-control {
+  font-weight: normal;
+  display: block;
+}
+
+.control-label {
+  font-weight: bold;
+}
+
+.search-form {
+  select[multiple] {
+    height: 34px;
+    transition: 0.1s height, 0.1s margin-bottom;
+    margin-bottom: 0;
+
+    &.sr-only {
+      width: 200px !important;
+    }
+
+    &:hover {
+      height: 140px;
+      margin-bottom: -66px;
+    }
+  }
+  .form-group > button {
+    margin-top: 25px;
+  }
+}
+
+#kirkanta-form-templateselectform {
+  input[type="radio"],
+  input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+#input-group-days {
+  // margin-top: 40px;
+
+  &.disabled {
+    legend {
+      opacity: 0.5;
+    }
+    .row {
+      display: none;
+    }
+  }
+
+  .form-collection-row:first-child {
+    .field-days-name,
+    .field-days-opens,
+    .field-days-closes{
+      label {
+        display: block;
+      }
+    }
+    .field-days-closed {
+      label {
+        margin-top: 2em;
+      }
+    }
+  }
+  .form-collection-row:nth-child(2n) {
+    background-color: rgba(0, 0, 0, .1);
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .field-days-name,
+  .field-days-opens,
+  .field-days-closes,
+  .field-days-info {
+    label {
+      display: none;
+    }
+  }
+  .field-days-info-wrap {
+    .form-group {
+      display: none;
+    }
+  }
+  .field-days-info-wrap.enabled {
+    .toggle-edit-days-info {
+      display: none;
+    }
+    .tr-group.show-all > .form-group,
+    .form-group.tr-active {
+      display: block;
+    }
+  }
+}
+.template-select-form {
+  label[for="input-name-filter"] {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+  }
+
+  fieldset {
+    .form-group {
+      margin-left: 15px;
+    }
+  }
+
+  .form-group.filtered {
+    display: none;
+  }
+}
+
+form {
+  .tr-group {
+    &.show-all {
+      border: 1px solid @input-border;
+      padding: 15px 15px 0;
+      margin-bottom: 15px;
+
+      .tr-field {
+        display: block;
+
+        label {
+          display: none;
+        }
+      }
+
+      .tr-field:first-child label {
+        display: block;
+      }
+    }
+    .input-group-addon {
+      cursor: help;
+    }
+  }
+  .tr-field {
+    display: none;
+
+    .input-group-addon {
+      min-width: 3em;
+    }
+  }
+  .tr-active {
+    display: block;
+  }
+}
+
+form.document-form {
+  margin: 0 20px;
+}
+
+fieldset {
+  background-color: #f5f5f5;
+  // border: 1px solid #ddd;
+  margin: 0 -14px 15px;
+  padding: 15px;
+  border-radius: 5px;
+
+  legend {
+    display: inline;
+    border-width: 0;
+    position: relative;
+
+    // Fixes anomalies between Firefox and Chrome.
+    float: left;
+  }
+}
+
+.form-field-info {
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}

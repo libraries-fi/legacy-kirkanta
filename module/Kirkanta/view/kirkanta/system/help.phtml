@@ -1,0 +1,26 @@
+<?php
+$pdf_src = $this->basePath('images/application-pdf.png');
+?>
+
+<h3>Palaute</h3>
+<p>Kirjastohakemiston hallintaliittymän toiminnasta voi antaa palautetta Kirjastot.fi:n <a href="http://www.kirjastot.fi/fi/palaute">palautelomakkeella</a>. Saat vastauksen suoraan sähköpostiisi.</p>
+<p>Voit myös halutessasi ottaa yhteyttä toimitukseen puhelimitse tai sähköpostitse.</p>
+
+<h3>Ylläpidon yhteystiedot</h3>
+<dl id="help-contact">
+  <dt>Kirjastot.fi-toimitus</dt>
+  <dd><a href="mailto:toimitus@kirjastot.fi">toimitus@kirjastot.fi</a></dd>
+  <dd><a href="tel:+358931085280">09-31085280</a></dd>
+</dl>
+
+<h3>Käyttöohjeet</h3>
+<dl id="help-manuals">
+  <dt>Suomeksi</dt>
+  <dd>
+    <a href="<?= $this->basePath('files/Kirjastohakemisto-v2.pdf') ?>"><img src="<?= $pdf_src ?>"> käyttöohje.pdf</a>
+  </dd>
+  <dt>Ruotsiksi</dt>
+  <dd>
+    <a href="<?= $this->basePath('files/Instruktioner för Biblioteksregistret.pdf') ?>"><img src="<?= $pdf_src ?>"/> manual.pdf</a>
+  </dd>
+</dl>

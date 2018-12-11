@@ -1,0 +1,1703 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Library Directory 1.0\n"
+"Report-Msgid-Bugs-To: toimitus2@kirjastot.fi\n"
+"POT-Creation-Date: 2018-08-01 11:12+0300\n"
+"PO-Revision-Date: 2015-12-22 13:33+0200\n"
+"Last-Translator: Samu Juvonen <samu.juvonen@gmail.com>\n"
+"Language-Team: Kirjastot.fi <toimitus2@kirjastot.fi>\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: src/Controller/OrganisationController.php:138
+#: src/Controller/EntityController.php:77
+msgid "New"
+msgstr "Uusi"
+
+#: src/Controller/OrganisationController.php:146
+msgid "Templates"
+msgstr "Mallipohjat"
+
+#: src/Controller/OrganisationController.php:214
+#: src/Controller/EntityController.php:142
+#: src/Controller/EntityController.php:143
+#: ../HelmetExt/src/Controller/ServiceTypeController.php:58
+#: ../HelmetExt/src/Controller/ServiceTypeController.php:59
+msgid "Data saved"
+msgstr "Tiedot tallennettu"
+
+#: src/Controller/OrganisationController.php:222
+msgid "Form validation failed"
+msgstr "Lomakkeella on virheitä"
+
+#: src/Controller/OrganisationController.php:302
+#: src/Controller/OrganisationController.php:376
+#: src/Controller/OrganisationController.php:433
+#: src/Form/TemplateSelectForm.php:19
+msgid "Choose templates"
+msgstr "Mallipohjat"
+
+#: src/Controller/EntityController.php:145
+msgid ""
+"Changes could not be saved because the removed record has child resources."
+msgstr ""
+"Muutoksia ei voitu tallentaa, koska poistetulla tietueella on aliresursseja."
+
+#: src/Controller/EntityController.php:166
+#: src/Controller/EntityController.php:205
+msgid "Validation failed"
+msgstr "Lomakkeella on virheitä"
+
+#: src/Controller/EntityController.php:172 src/Form/EntityForm.php:100
+msgid "New resource"
+msgstr "Uusi tietue"
+
+#: src/Controller/EntityController.php:174
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: src/Controller/EntityController.php:202
+msgid "Item removed"
+msgstr "Tietue poistettu"
+
+#: src/Entity/ListBuilder/AccessibilityFeatureListBuilder.php:9
+#: src/Entity/ListBuilder/AccessibilityReferenceListBuilder.php:15
+#: config/navigation.config.php:10 config/navigation.config.php:117
+#: config/navigation.config.php:187 config/entities.config.php:8
+msgid "Accessibility"
+msgstr "Esteettömyys"
+
+#: src/Entity/ListBuilder/AccessibilityFeatureListBuilder.php:18
+#: src/Entity/ListBuilder/AccessibilityReferenceListBuilder.php:23
+#: src/Entity/ListBuilder/CityListBuilder.php:22
+#: src/Entity/ListBuilder/MobileStopListBuilder.php:12
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:23
+#: src/Entity/ListBuilder/PeriodListBuilder.php:23
+#: src/Entity/ListBuilder/PersonListBuilder.php:24
+#: src/Entity/ListBuilder/PhoneNumberListBuilder.php:22
+#: src/Entity/ListBuilder/PictureListBuilder.php:18
+#: src/Entity/ListBuilder/ProvincialLibraryListBuilder.php:19
+#: src/Entity/ListBuilder/RegionListBuilder.php:18
+#: src/Entity/ListBuilder/RoleListBuilder.php:22
+#: src/Entity/ListBuilder/ServiceReferenceListBuilder.php:21
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:24
+#: src/Entity/ListBuilder/OrganisationWebLinkGroupListBuilder.php:20
+#: src/Entity/ListBuilder/OrganisationWebLinkListBuilder.php:25
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:17
+#: src/Entity/ListBuilder/ServiceListBuilder.php:34
+#: src/Form/Fieldset/CustomDataFieldset.php:27
+#: src/Form/Fieldset/WebLinkFieldset.php:50
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:27
+#: src/Form/AccessibilityFeatureSearchForm.php:14
+#: src/Form/CitySearchForm.php:14 src/Form/OrganisationAddForm.php:14
+#: src/Form/OrganisationSearchForm.php:18 src/Form/PeriodSearchForm.php:16
+#: src/Form/PersonSearchForm.php:17 src/Form/PhoneNumberForm.php:17
+#: src/Form/PictureForm.php:35 src/Form/RoleSearchForm.php:14
+#: src/Form/ServiceForm.php:48 src/Form/ServiceSearchForm.php:16
+#: src/Form/ServiceTypeForm.php:18 src/Form/ServiceTypeSearchForm.php:16
+#: src/Form/AccessibilityFeatureForm.php:14 src/Form/CityForm.php:18
+#: src/Form/PeriodForm.php:27 src/Form/ProvincialLibraryForm.php:17
+#: src/Form/RegionForm.php:14 src/Form/OrganisationWebLinkForm.php:20
+#: src/Form/ConsortiumWebLinkForm.php:28 src/Form/RoleForm.php:12
+#: src/Form/ConsortiumForm.php:39 src/Form/OrganisationForm.php:50
+#: ../HelmetExt/src/Form/ServiceTypeHelmetForm.php:20
+msgid "Name"
+msgstr "Nimi"
+
+#: src/Entity/ListBuilder/AccessibilityFeatureListBuilder.php:19
+#: src/Entity/ListBuilder/AccessibilityReferenceListBuilder.php:24
+#: src/Entity/ListBuilder/PhoneNumberListBuilder.php:24
+#: src/Entity/ListBuilder/RoleListBuilder.php:24
+#: src/Entity/ListBuilder/ServiceReferenceListBuilder.php:23
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:26
+#: src/Entity/ListBuilder/ServiceListBuilder.php:36
+#: src/Form/Fieldset/PeriodDayFieldset.php:48
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:43
+#: src/Form/PhoneNumberForm.php:32 src/Form/ServiceForm.php:67
+#: src/Form/ServiceTypeForm.php:26 src/Form/AccessibilityFeatureForm.php:23
+#: src/Form/PeriodForm.php:36 src/Form/RoleForm.php:35
+#: src/Form/ConsortiumForm.php:64 src/Form/OrganisationForm.php:180
+#: config/navigation.config.php:77 config/navigation.config.php:152
+#: config/navigation.config.php:227
+msgid "Description"
+msgstr "Kuvaus"
+
+#: src/Entity/ListBuilder/CityListBuilder.php:13
+#: config/navigation.config.php:14
+msgid "Cities"
+msgstr "Kunnat"
+
+#: src/Entity/ListBuilder/CityListBuilder.php:23 src/Form/CityForm.php:35
+#: config/entities.config.php:148
+msgid "Region"
+msgstr "Maakunta"
+
+#: src/Entity/ListBuilder/CityListBuilder.php:24 src/Form/CityForm.php:69
+#: src/Form/OrganisationForm.php:125 config/entities.config.php:37
+msgid "Consortium"
+msgstr "Kirjastokimppa"
+
+#: src/Entity/ListBuilder/CityListBuilder.php:25 src/Form/CitySearchForm.php:42
+#: src/Form/CityForm.php:52 config/entities.config.php:135
+msgid "Provincial Library"
+msgstr "Maakuntakirjasto"
+
+#: src/Entity/ListBuilder/MobileStopListBuilder.php:13
+msgid "Address"
+msgstr "Osoite"
+
+#: src/Entity/ListBuilder/NotificationListBuilder.php:13
+#: config/navigation.config.php:22 view/layout/layout.phtml:39
+msgid "Notifications"
+msgstr "Ilmoitukset"
+
+#: src/Entity/ListBuilder/NotificationListBuilder.php:21
+#: src/Entity/ListBuilder/PersonListBuilder.php:25
+msgid "Title"
+msgstr "Nimike"
+
+#: src/Entity/ListBuilder/NotificationListBuilder.php:22
+msgid "Modified"
+msgstr "Muokattu"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:15
+#: config/navigation.config.php:26
+msgid "Organisations"
+msgstr "Organisaatiot"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:24
+#: src/Entity/ListBuilder/ServiceReferenceListBuilder.php:22
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:25
+#: src/Entity/ListBuilder/ServiceListBuilder.php:35
+#: src/Form/Fieldset/ServiceBaseInfo.php:40
+#: src/Form/OrganisationSearchForm.php:26 src/Form/ServiceSearchForm.php:24
+#: src/Form/ServiceTypeForm.php:35 src/Form/ServiceTypeSearchForm.php:24
+#: src/Form/OrganisationForm.php:67
+#: ../HelmetExt/src/Form/ServiceTypeHelmetForm.php:31
+#: ../KirkantaExport/src/Form/AddressesForm.php:32
+msgid "Type"
+msgstr "Tyyppi"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:25
+msgid "Branch"
+msgstr "Toimipiste"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:26
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:19
+#: src/Form/OrganisationSearchForm.php:45 src/Form/PersonForm.php:28
+#: src/Form/ConsortiumForm.php:20 src/Form/OrganisationForm.php:38
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:35
+msgid "Published"
+msgstr "Julkaistu"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:36
+#: src/Entity/ListBuilder/PeriodListBuilder.php:58
+#: src/Entity/ListBuilder/PersonListBuilder.php:50
+#: src/Entity/ListBuilder/UserListBuilder.php:24
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:31
+#: src/Form/Fieldset/WebLinkFieldset.php:70
+#: src/Form/OrganisationWebLinkForm.php:36
+msgid "Group"
+msgstr "Ryhmä"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:60
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:39
+#: src/Form/OrganisationSearchForm.php:48
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:48
+msgid "Yes"
+msgstr "Kyllä"
+
+#: src/Entity/ListBuilder/OrganisationListBuilder.php:60
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:39
+#: src/Form/OrganisationSearchForm.php:47
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:47
+msgid "No"
+msgstr "Ei"
+
+#: src/Entity/ListBuilder/PeriodListBuilder.php:14
+#: config/navigation.config.php:102 config/navigation.config.php:172
+#: config/navigation.config.php:217 view/kirkanta/organisation/show.phtml:5
+msgid "Schedules"
+msgstr "Aukioloajat"
+
+#: src/Entity/ListBuilder/PeriodListBuilder.php:24
+#: src/Form/PeriodSearchForm.php:24 src/Form/PeriodForm.php:45
+msgid "Section"
+msgstr "Osasto"
+
+#: src/Entity/ListBuilder/PeriodListBuilder.php:25
+msgid "Validity"
+msgstr "Voimassaolo"
+
+#: src/Entity/ListBuilder/PeriodListBuilder.php:50
+#, php-format
+msgid "%s (continuous)"
+msgstr "%s (jatkuva)"
+
+#: src/Entity/ListBuilder/PersonListBuilder.php:16
+#: view/kirkanta/organisation/show.phtml:6
+msgid "Staff"
+msgstr "Henkilöstö"
+
+#: src/Entity/ListBuilder/PersonListBuilder.php:26
+#: src/Entity/ListBuilder/UserListBuilder.php:23 src/Form/ServiceForm.php:107
+#: src/Form/ServiceReferenceForm.php:18 src/Form/UserForm.php:28
+#: view/user/profile.phtml:10
+msgid "Email"
+msgstr "Sähköposti"
+
+#: src/Entity/ListBuilder/PersonListBuilder.php:27
+msgid "Phone"
+msgstr "Puhelin"
+
+#: src/Entity/ListBuilder/PersonListBuilder.php:28 src/Form/PersonForm.php:37
+#: src/Form/PersonSearchForm.php:31
+#: src/Form/OrganisationWebLinkGroupForm.php:19 config/entities.config.php:64
+msgid "Organisation"
+msgstr "Organisaatio"
+
+#: src/Entity/ListBuilder/PhoneNumberListBuilder.php:14
+#: src/Form/OrganisationForm.php:331 config/navigation.config.php:87
+#: config/navigation.config.php:162
+msgid "Phone numbers"
+msgstr "Puhelinnumerot"
+
+#: src/Entity/ListBuilder/PhoneNumberListBuilder.php:23
+#: src/Form/PhoneNumberForm.php:25
+msgid "Number"
+msgstr "Numero"
+
+#: src/Entity/ListBuilder/PictureListBuilder.php:9
+#: config/navigation.config.php:107 config/navigation.config.php:177
+#: config/navigation.config.php:222
+msgid "Pictures"
+msgstr "Kuvat"
+
+#: src/Entity/ListBuilder/PictureListBuilder.php:17 src/Form/PersonForm.php:135
+#: src/Form/PersonForm.php:143 src/Form/ServiceForm.php:92
+#: src/Form/ServiceForm.php:100 config/entities.config.php:122
+msgid "Picture"
+msgstr "Kuva"
+
+#: src/Entity/ListBuilder/PictureListBuilder.php:19 src/Form/PictureForm.php:50
+msgid "Year"
+msgstr "Vuosi"
+
+#: src/Entity/ListBuilder/PictureListBuilder.php:20 src/Form/PictureForm.php:43
+msgid "Author"
+msgstr "Omistaja"
+
+#: src/Entity/ListBuilder/ProvincialLibraryListBuilder.php:11
+msgid "Provincial libraries"
+msgstr "Maakuntakirjastot"
+
+#: src/Entity/ListBuilder/ProvincialLibraryListBuilder.php:20
+#: src/Form/ProvincialLibraryForm.php:25
+msgid "Province"
+msgstr "Maakunta"
+
+#: src/Entity/ListBuilder/RegionListBuilder.php:9
+#: src/Form/CitySearchForm.php:22 config/navigation.config.php:38
+msgid "Regions"
+msgstr "Maakunnat"
+
+#: src/Entity/ListBuilder/RoleListBuilder.php:13
+#: config/navigation.config.php:62
+msgid "User Groups"
+msgstr "Käyttäjäryhmät"
+
+#: src/Entity/ListBuilder/RoleListBuilder.php:21
+#: src/Entity/ListBuilder/UserListBuilder.php:21
+msgid "ID"
+msgstr "ID"
+
+#: src/Entity/ListBuilder/RoleListBuilder.php:23
+msgid "Parent"
+msgstr "Ylätaso"
+
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:15
+#: config/navigation.config.php:50
+msgid "Service Types"
+msgstr "Palvelutyypit"
+
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:27
+msgid "Usage"
+msgstr "Käyttö"
+
+#: src/Entity/ListBuilder/ServiceTypeListBuilder.php:37
+#, php-format
+msgid "%d reference(s)"
+msgstr "%d viittaus(ta)"
+
+#: src/Entity/ListBuilder/UserListBuilder.php:13
+#: config/navigation.config.php:58
+msgid "Users"
+msgstr "Käyttäjät"
+
+#: src/Entity/ListBuilder/UserListBuilder.php:22 src/Form/UserForm.php:21
+#: view/user/change_email.phtml:37 view/user/change_password.phtml:37
+#: view/user/profile.phtml:8 Module.php:169
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+#: src/Entity/ListBuilder/UserListBuilder.php:25
+msgid "Last login"
+msgstr "Kirjautunut"
+
+#: src/Entity/ListBuilder/OrganisationWebLinkGroupListBuilder.php:11
+msgid "Link Groups"
+msgstr "Linkkiryhmät"
+
+#: src/Entity/ListBuilder/OrganisationWebLinkListBuilder.php:16
+#: config/navigation.config.php:127
+msgid "Websites"
+msgstr "Verkkosivut"
+
+#: src/Entity/ListBuilder/OrganisationWebLinkListBuilder.php:26
+#: src/Form/Fieldset/WebLinkFieldset.php:59
+#: src/Form/OrganisationWebLinkForm.php:28
+#: src/Form/ConsortiumWebLinkForm.php:36
+msgid "URL"
+msgstr "Osoite"
+
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:9
+#: config/navigation.config.php:18
+msgid "Consortiums"
+msgstr "Kirjastokimpat"
+
+#: src/Entity/ListBuilder/ConsortiumListBuilder.php:18
+#: src/Form/ConsortiumForm.php:47 src/Form/OrganisationForm.php:233
+msgid "Homepage"
+msgstr "Kotisivut"
+
+#: src/Entity/ListBuilder/ServiceListBuilder.php:24
+#: config/navigation.config.php:112 config/navigation.config.php:182
+msgid "Services"
+msgstr "Palvelut"
+
+#: src/Entity/ListBuilder/ServiceListBuilder.php:33
+#: src/Form/Fieldset/ServiceBaseInfo.php:28
+msgid "Standard name"
+msgstr "Standardinimi"
+
+#: src/Event/Listener/InjectConsortiumTabs.php:56 src/Form/ServiceForm.php:20
+msgid "Base info"
+msgstr "Perustiedot"
+
+#: src/Event/Listener/InjectConsortiumTabs.php:64
+msgid "Finna"
+msgstr "Finna"
+
+#: src/Event/Listener/InjectConsortiumTabs.php:72
+#: src/Form/ConsortiumForm.php:118
+msgid "Links"
+msgstr "Linkit"
+
+#: src/Event/Listener/InjectConsortiumTabs.php:80
+#: src/Form/ConsortiumForm.php:136
+msgid "Link groups"
+msgstr "Linkkiryhmät"
+
+#: src/Event/Listener/OrganisationEditAction.php:130
+#: src/Event/Listener/OrganisationEditAction.php:145
+msgid "Copy template"
+msgstr "Kopioi mallipohja"
+
+#: src/Form/Element/CustomDataCollection.php:22
+msgid "Values"
+msgstr "Arvot"
+
+#: src/Form/Element/PeriodDayCollection.php:22
+#: view/kirkanta/partial/period-days.phtml:2
+msgid "Days"
+msgstr "Päivät"
+
+#: src/Form/Fieldset/AddressFieldset.php:30
+#: src/Form/Fieldset/MailAddressFieldset.php:38
+msgid "Street address"
+msgstr "Katuosoite"
+
+#: src/Form/Fieldset/AddressFieldset.php:38
+#: src/Form/Fieldset/MailAddressFieldset.php:53
+msgid "Zipcode"
+msgstr "Postinumero"
+
+#: src/Form/Fieldset/AddressFieldset.php:46 src/Form/OrganisationForm.php:108
+#: config/entities.config.php:23
+msgid "City"
+msgstr "Kunta"
+
+#: src/Form/Fieldset/AddressFieldset.php:62
+#: src/Form/Fieldset/MailAddressFieldset.php:60
+msgid "Post office"
+msgstr "Postitoimipaikka"
+
+#: src/Form/Fieldset/AddressFieldset.php:70
+msgid "Info"
+msgstr ""
+
+#: src/Form/Fieldset/AddressFieldset.php:71
+msgid "Optional description to guide visitors."
+msgstr "Vapaaehtoinen kuvaus vierailijoiden ohjeistamiseksi."
+
+#: src/Form/Fieldset/MailAddressFieldset.php:31
+msgid "Enable"
+msgstr "Ota käyttöön"
+
+#: src/Form/Fieldset/MailAddressFieldset.php:46
+msgid "PO box number"
+msgstr "Postilokero"
+
+#: src/Form/Fieldset/OpeningTimesFieldset.php:26
+msgid "Opens"
+msgstr "Aukeaa"
+
+#: src/Form/Fieldset/OpeningTimesFieldset.php:38
+msgid "Closes"
+msgstr "Sulkeutuu"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:53
+msgid "Order in shared service listings (HelMet)"
+msgstr "Järjestys yhteisissä palvelulistauksissa (HelMet)"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:55 src/Form/ServiceForm.php:132
+#: src/Form/ServiceReferenceForm.php:43
+msgid "n/a"
+msgstr "Ei käytössä"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:56 src/Form/ServiceForm.php:133
+#: src/Form/ServiceReferenceForm.php:44
+msgid "First"
+msgstr "Ensimmäinen"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:57 src/Form/ServiceForm.php:134
+#: src/Form/ServiceReferenceForm.php:45
+msgid "Second"
+msgstr "Toinen"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:58 src/Form/ServiceForm.php:135
+#: src/Form/ServiceReferenceForm.php:46
+msgid "Third"
+msgstr "Kolmas"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:59 src/Form/ServiceForm.php:136
+#: src/Form/ServiceReferenceForm.php:47
+msgid "Fourth"
+msgstr "Neljäs"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:60 src/Form/ServiceForm.php:137
+#: src/Form/ServiceReferenceForm.php:48
+msgid "Fifth"
+msgstr "Viides"
+
+#: src/Form/Fieldset/ServiceBaseInfo.php:61 src/Form/ServiceForm.php:138
+#: src/Form/ServiceReferenceForm.php:49
+msgid "Sixth"
+msgstr "Kuudes"
+
+#: src/Form/Fieldset/CustomDataFieldset.php:31
+msgid "Informative name"
+msgstr "Kuvaava nimi"
+
+#: src/Form/Fieldset/CustomDataFieldset.php:38
+msgid "Machine name"
+msgstr "Koneluettava nimi"
+
+#: src/Form/Fieldset/CustomDataFieldset.php:41
+msgid "Internal ID"
+msgstr "Sisäinen tunniste"
+
+#: src/Form/Fieldset/CustomDataFieldset.php:49
+msgid "Value"
+msgstr "Arvo"
+
+#: src/Form/Fieldset/PeriodDayFieldset.php:41
+msgid "Closed"
+msgstr "Suljettu"
+
+#: src/Form/Fieldset/WebLinkFieldset.php:87
+#: src/Form/OrganisationWebLinkForm.php:58
+#: src/Form/ConsortiumWebLinkForm.php:44
+msgid "New link"
+msgstr "Uusi linkki"
+
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:35
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:18
+msgid "Identifier"
+msgstr "Tunniste"
+
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:36
+msgid "Machine-readable identifier."
+msgstr "Koneluettava tunniste"
+
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:44
+msgid "Internal description for the group."
+msgstr "Yksityinen kuvausteksti ryhmälle"
+
+#: src/Form/Fieldset/WebLinkGroupFieldset.php:56
+#: src/Form/WebLinkGroupForm.php:19
+msgid "New link group"
+msgstr "Uusi ryhmä"
+
+#: src/Form/EntityDeleteForm.php:14
+msgid "Do you really want to delete this item?"
+msgstr "Haluatko varmasti poistaa tämän tietueen?"
+
+#: src/Form/EntityDeleteForm.php:35 src/Form/Form.php:79
+#: src/EntityPluginManager.php:133 config/navigation.config.php:137
+#: config/navigation.config.php:197 config/navigation.config.php:232
+msgid "Delete"
+msgstr "Poista"
+
+#: src/Form/Form.php:54
+msgid "Submit"
+msgstr "Lähetä"
+
+#: src/Form/Form.php:65 view/user/change_email.phtml:19
+#: view/user/change_password.phtml:19
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:46
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: src/Form/OrganisationSearchForm.php:35 src/Form/OrganisationForm.php:77
+#: ../KirkantaExport/src/Form/AddressesForm.php:45
+msgid "Branch type"
+msgstr "Toimipisteen tyyppi"
+
+#: src/Form/OrganisationSearchForm.php:58 src/Form/PeriodSearchForm.php:37
+#: src/Form/PersonSearchForm.php:49 src/Form/UserSearchForm.php:22
+msgid "Groups"
+msgstr "Käyttäjäryhmät"
+
+#: src/Form/OrganisationSearchForm.php:59 src/Form/PeriodSearchForm.php:38
+#: src/Form/PersonSearchForm.php:50 src/Form/ServiceSearchForm.php:25
+#: src/Form/ServiceTypeSearchForm.php:25 src/Form/UserSearchForm.php:23
+#: src/Form/AbstractSearchForm.php:58
+#: src/I18n/Form/TranslatableFormTrait.php:46
+msgid "All"
+msgstr "Kaikki"
+
+#: src/Form/PeriodSearchForm.php:60
+msgid "Show expired periods"
+msgstr "Näytä vanhat jaksot"
+
+#: src/Form/PersonForm.php:25 src/Form/ConsortiumForm.php:17
+#: src/Form/OrganisationForm.php:35
+msgid "State"
+msgstr "Tila"
+
+#: src/Form/PersonForm.php:27 src/Form/ConsortiumForm.php:19
+#: src/Form/OrganisationForm.php:37
+msgid "Hidden"
+msgstr "Piilotettu"
+
+#: src/Form/PersonForm.php:53
+msgid "First name"
+msgstr "Etunimi"
+
+#: src/Form/PersonForm.php:60
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: src/Form/PersonForm.php:67
+msgid "Job title"
+msgstr "Työnimike"
+
+#: src/Form/PersonForm.php:75
+msgid "Responsibility"
+msgstr "Vastuualue"
+
+#: src/Form/PersonForm.php:85
+msgid "Qualities"
+msgstr "Osaamisalueet"
+
+#: src/Form/PersonForm.php:97 src/Form/OrganisationForm.php:254
+msgid "Email address"
+msgstr "Sähköposti"
+
+#: src/Form/PersonForm.php:105
+msgid "Email address is public"
+msgstr "Sähköpostiosoite on julkinen"
+
+#: src/Form/PersonForm.php:112 src/Form/ServiceForm.php:114
+#: src/Form/ServiceReferenceForm.php:25
+msgid "Phone number"
+msgstr "Puhelinnumero"
+
+#: src/Form/PersonForm.php:120
+msgid "Head of the organisation"
+msgstr "Organisaation johtaja"
+
+#: src/Form/PersonForm.php:127
+msgid "Link to website"
+msgstr "Kotisivut"
+
+#: src/Form/PersonForm.php:149 src/Form/ServiceForm.php:145
+msgid "Change picture"
+msgstr "Vaihda kuva"
+
+#: src/Form/PictureForm.php:15
+msgid "New picture"
+msgstr "Uusi kuva"
+
+#: src/Form/PictureForm.php:27
+msgid "File"
+msgstr "Tiedosto"
+
+#: src/Form/PictureForm.php:61
+msgid "Use as default picture"
+msgstr "Käytä oletuskuvana"
+
+#: src/Form/ServiceForm.php:31
+msgid "Service type"
+msgstr "Palvelutyyppi"
+
+#: src/Form/ServiceForm.php:49
+msgid "Only fill when you need to alter the standard name"
+msgstr "Täytetään vain, kun halutaan muokata standardinimeä"
+
+#: src/Form/ServiceForm.php:58
+msgid "Short description"
+msgstr "Lyhyt kuvaus"
+
+#: src/Form/ServiceForm.php:75
+msgid "Price of the service"
+msgstr "Palvelun hinta"
+
+#: src/Form/ServiceForm.php:84
+msgid "Available for loan"
+msgstr "Lainattavissa"
+
+#: src/Form/ServiceForm.php:121 src/Form/ServiceReferenceForm.php:32
+#: config/entities.config.php:241
+msgid "Website"
+msgstr "Verkkosivu"
+
+#: src/Form/ServiceForm.php:130 src/Form/ServiceReferenceForm.php:41
+msgid "Order in library details (HelMet)"
+msgstr "Järjestys kirjaston tiedoissa (HelMet)"
+
+#: src/Form/ServiceTypeForm.php:45
+#: ../HelmetExt/src/Form/ServiceTypeHelmetForm.php:44
+msgid "Display on Helmet.fi"
+msgstr "Näytä helmet.fi:ssä"
+
+#: src/Form/TemplateSelectForm.php:25
+msgid "Filter"
+msgstr "Suodata"
+
+#: src/Form/TemplateSelectForm.php:31
+msgid "Search for items by name..."
+msgstr "Etsi tietueita nimellä..."
+
+#: src/Form/UserForm.php:10
+msgid "New user"
+msgstr "Uusi käyttäjä"
+
+#: src/Form/UserForm.php:11
+#, php-format
+msgid "Edit user #%d"
+msgstr "Muokkaa käyttäjää #%d"
+
+#: src/Form/UserForm.php:36 config/entities.config.php:161
+msgid "User Group"
+msgstr "Käyttäjäryhmä"
+
+#: src/Form/UserForm.php:52 view/user/change_password.phtml:36
+msgid "Change password"
+msgstr "Vaihda salasana"
+
+#: src/Form/UserSearchForm.php:14
+msgid "Name or email"
+msgstr "Nimi tai sähköposti"
+
+#: src/Form/AbstractSearchForm.php:52
+msgid "Search"
+msgstr "Hae"
+
+#: src/Form/CityForm.php:26 src/Form/ProvincialLibraryForm.php:33
+#: src/Form/RegionForm.php:22 src/Form/ConsortiumForm.php:55
+#: src/Form/OrganisationForm.php:414
+msgid "Slug"
+msgstr "URL-tunniste"
+
+#: src/Form/PeriodForm.php:16
+msgid "New period"
+msgstr "Uusi jakso"
+
+#: src/Form/PeriodForm.php:54
+msgid "Continuous period"
+msgstr "Jatkuu toistaiseksi"
+
+#: src/Form/PeriodForm.php:62
+msgid "Valid from"
+msgstr "Alkamispäivä"
+
+#: src/Form/PeriodForm.php:70
+msgid "Valid until"
+msgstr "Päättymispäivä"
+
+#: src/Form/OrganisationWebLinkForm.php:59
+#: src/Form/ConsortiumWebLinkForm.php:45
+msgid "Edit link"
+msgstr "Muokkaa linkkiä"
+
+#: src/Form/WebLinkGroupForm.php:20
+msgid "Edit link group"
+msgstr "Muokkaa ryhmää"
+
+#: src/Form/ConsortiumWebLinkForm.php:18
+msgid "Link group"
+msgstr "Linkkiryhmä"
+
+#: src/Form/RoleForm.php:20
+msgid "Parent role"
+msgstr "Ylätason rooli"
+
+#: src/Form/RoleForm.php:38
+msgid "Describe the role's special purpose"
+msgstr "Kuvaile roolin erityismerkitystä"
+
+#: src/Form/EntityForm.php:101
+#, php-format
+msgid "Edit #%d"
+msgstr "Muokkaa tietuetta #%d"
+
+#: src/Form/EntityForm.php:137 view/user/change_email.phtml:8
+#: view/user/change_password.phtml:8
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:45
+msgid "Save"
+msgstr "Tallenna"
+
+#: src/Form/ConsortiumForm.php:30 src/Form/OrganisationForm.php:407
+msgid "Owner"
+msgstr "Omistaja"
+
+#: src/Form/ConsortiumForm.php:78
+msgid "Finna organisation"
+msgstr "Finna-organisaatio"
+
+#: src/Form/ConsortiumForm.php:79
+msgid ""
+"Enable this option if the consortium is not allowed for regular municipality "
+"libraries."
+msgstr ""
+"Valitse tämä vaihtoehto vain mikäli kimppatietue ei ole sallittu "
+"tavallisille kunnankirjastoille."
+
+#: src/Form/ConsortiumForm.php:87 src/Form/ConsortiumForm.php:95
+msgid "Logo"
+msgstr "Logo"
+
+#: src/Form/ConsortiumForm.php:101
+msgid "Change logo"
+msgstr "Vaihda logo"
+
+#: src/Form/OrganisationForm.php:23
+msgid "New organisation"
+msgstr "Uusi organisaatio"
+
+#: src/Form/OrganisationForm.php:58
+msgid "Short name"
+msgstr "Lyhyt nimi"
+
+#: src/Form/OrganisationForm.php:81
+msgid ""
+"Branch type is only available for organisations with the type of Library."
+msgstr ""
+"Toimipisteen tyyppi on valittavissa vain Kirjasto-tyyppisille tietueille."
+
+#: src/Form/OrganisationForm.php:89
+msgid "Parent organisation"
+msgstr "Emo-organisaatio"
+
+#: src/Form/OrganisationForm.php:144
+msgid "-- Municipality default --"
+msgstr "-- Kunnan oletuskimppa --"
+
+#: src/Form/OrganisationForm.php:145
+msgid "-- No consortium --"
+msgstr "-- Ei kirjastokimppaa --"
+
+#: src/Form/OrganisationForm.php:155
+#, php-format
+msgid "The fallback value for %s is %s."
+msgstr "Oletusarvo kunnalle %s on %s."
+
+#: src/Form/OrganisationForm.php:159
+msgid "By default the consortium is defined by the selected city."
+msgstr "Oletusarvoisesti kimppa määräytyy valitun kunnan perusteella."
+
+#: src/Form/OrganisationForm.php:167
+msgid "Slogan"
+msgstr "Slogan"
+
+#: src/Form/OrganisationForm.php:169 src/Form/OrganisationForm.php:182
+msgid ""
+"Exposed via API. Will be enabled in the Library Directory after an upgrade "
+"later on."
+msgstr ""
+"Finna-kenttä. Tieto näytetään Kirjastohakemistossa myöhemmin tehtävän "
+"päivityksen jälkeen."
+
+#: src/Form/OrganisationForm.php:195
+msgid "Description (old)"
+msgstr "Kuvaus (vanha)"
+
+#: src/Form/OrganisationForm.php:197
+msgid ""
+"This field will be removed after the Library Directory frontend is upgraded. "
+"It is replaced by Slogan and rich text description."
+msgstr ""
+"Kenttä poistetaan, kun Kirjastohakemisto on päivitetty käyttämään slogan-"
+"kenttää sekä html-muotoiluja hyödyntävää esittelytekstiä."
+
+#: src/Form/OrganisationForm.php:208
+msgid "ISIL"
+msgstr "ISIL"
+
+#: src/Form/OrganisationForm.php:215
+msgid "Official ID"
+msgstr "Virallinen tunniste"
+
+#: src/Form/OrganisationForm.php:222
+msgid "Year founded"
+msgstr "Perustamisvuosi"
+
+#: src/Form/OrganisationForm.php:241
+msgid "Web Library URL"
+msgstr "Verkkokirjaston osoite"
+
+#: src/Form/OrganisationForm.php:247
+msgid "Defaults to the address configured for the consortium."
+msgstr "Oletusarvoisesti käytetään kirjastokimpalle merkittyä osoitetta."
+
+#: src/Form/OrganisationForm.php:262
+msgid "Buses"
+msgstr "Linja-autot"
+
+#: src/Form/OrganisationForm.php:269
+msgid "Trains"
+msgstr "Junat"
+
+#: src/Form/OrganisationForm.php:276
+msgid "Trams"
+msgstr "Raitiolinjat"
+
+#: src/Form/OrganisationForm.php:284
+msgid "Traffic info"
+msgstr "Ohjeita liikenteeseen"
+
+#: src/Form/OrganisationForm.php:293
+msgid "Parking instructions"
+msgstr "Pysäköintiohjeet"
+
+#: src/Form/OrganisationForm.php:301
+msgid "Coordinates"
+msgstr "Koordinaatit"
+
+#: src/Form/OrganisationForm.php:309
+msgid "Location"
+msgstr "Sijainti"
+
+#: src/Form/OrganisationForm.php:320
+msgid "Mail address"
+msgstr "Postiosoite"
+
+#: src/Form/OrganisationForm.php:346
+msgid "Construction year"
+msgstr "Rakentamisvuosi"
+
+#: src/Form/OrganisationForm.php:353
+msgid "Building name"
+msgstr "Rakennuksen nimi"
+
+#: src/Form/OrganisationForm.php:361
+msgid "Building architect"
+msgstr "Rakennusarkkitehti"
+
+#: src/Form/OrganisationForm.php:368
+msgid "Interior designer"
+msgstr "Sisustussuunnittelija"
+
+#: src/Form/OrganisationForm.php:376 config/navigation.config.php:132
+msgid "Custom data"
+msgstr "Lisätiedot"
+
+#: src/Form/OrganisationForm.php:387
+msgid "Sierra ID"
+msgstr ""
+
+#: src/Form/OrganisationForm.php:388
+msgid "Identificator in Helmet reservation system."
+msgstr "Tunniste Helmetin varausjärjestelmässä."
+
+#: src/Form/OrganisationForm.php:416
+msgid "Replaces the numeric ID of the organisation on the public website."
+msgstr ""
+"Korvaa organisaation numeerisen tunnisteen julkisella verkkosivustolla."
+
+#: src/I18n/Form/TranslatableFormTrait.php:45 Module.php:160
+msgid "Language"
+msgstr "Kieli"
+
+#: src/I18n/ContentLanguages.php:15 Module.php:164
+msgid "English"
+msgstr "englanti"
+
+#: src/I18n/ContentLanguages.php:16 Module.php:162
+msgid "Finnish"
+msgstr "suomi"
+
+#: src/I18n/ContentLanguages.php:17
+msgid "Russian"
+msgstr "venäjä"
+
+#: src/I18n/ContentLanguages.php:18
+msgid "Sami"
+msgstr "Saamen kieli"
+
+#: src/I18n/ContentLanguages.php:19 Module.php:163
+msgid "Swedish"
+msgstr "ruotsi"
+
+#: src/Util/OrganisationBranchTypes.php:15 src/Util/OrganisationTypes.php:15
+msgid "Library"
+msgstr "Kirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:16
+msgid "Main library"
+msgstr "Pääkirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:17
+msgid "Regional library"
+msgstr "Aluekirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:18
+msgid "Mobile library"
+msgstr "Kirjastoauto"
+
+#: src/Util/OrganisationBranchTypes.php:19
+msgid "Home service"
+msgstr "Kotipalvelu"
+
+#: src/Util/OrganisationBranchTypes.php:20
+msgid "Institutional library"
+msgstr "Laitoskirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:21
+msgid "Children's library"
+msgstr "Lasten kirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:22
+msgid "Music library"
+msgstr "Musiikkikirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:23
+msgid "Special library"
+msgstr "Erikoiskirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:24
+msgid "Vocational college library"
+msgstr "Ammattioppilaitoskirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:25
+msgid "School library"
+msgstr "Koulukirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:26
+msgid "Polytechnic library"
+msgstr "Ammattikorkeakoulukirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:27
+msgid "University library"
+msgstr "Yliopistokirjasto"
+
+#: src/Util/OrganisationBranchTypes.php:28
+msgid "Other library organisation"
+msgstr "Muu kirjastoalan organisaatio"
+
+#: src/Util/PeriodSections.php:15
+msgid "Regular timetables"
+msgstr "Yleinen aukiolo"
+
+#: src/Util/PeriodSections.php:16
+msgid "Self service"
+msgstr "Omatoimikirjasto"
+
+#: src/Util/PeriodSections.php:17
+msgid "Reading room"
+msgstr "Lehtisali"
+
+#: src/Util/PersonQualities.php:15
+msgid "AV production"
+msgstr "AV-tuotanto"
+
+#: src/Util/PersonQualities.php:16
+msgid "Book tips"
+msgstr "Kirjavinkkaus"
+
+#: src/Util/PersonQualities.php:17
+msgid "Children's library work"
+msgstr "Lastenkirjastotyö"
+
+#: src/Util/PersonQualities.php:18
+msgid "Communications"
+msgstr "Viestintä"
+
+#: src/Util/PersonQualities.php:19
+msgid "Digital publishing"
+msgstr "E-aineistot"
+
+#: src/Util/PersonQualities.php:20
+msgid "Education planning"
+msgstr "Koulutussuunnittelu"
+
+#: src/Util/PersonQualities.php:21
+msgid "Education"
+msgstr "Koulutus"
+
+#: src/Util/PersonQualities.php:22
+msgid "Finances"
+msgstr "Taloushallinto"
+
+#: src/Util/PersonQualities.php:23
+msgid "Games"
+msgstr "Pelit"
+
+#: src/Util/PersonQualities.php:24
+msgid "Human resources"
+msgstr "Henkilöstöhallinto"
+
+#: src/Util/PersonQualities.php:25
+msgid "Immigrant library work"
+msgstr "Maahanmuuttajakirjastotyö"
+
+#: src/Util/PersonQualities.php:26
+msgid "Indexing"
+msgstr "Luettelointi"
+
+#: src/Util/PersonQualities.php:27
+msgid "Information retrieval"
+msgstr "Tiedonhaku"
+
+#: src/Util/PersonQualities.php:28
+msgid "Information technology"
+msgstr "Tietotekniikka"
+
+#: src/Util/PersonQualities.php:29
+msgid "International cooperation"
+msgstr "Kansainvälinen yhteistyö"
+
+#: src/Util/PersonQualities.php:30
+msgid "Library facility work"
+msgstr "Laitoskirjastotyö"
+
+#: src/Util/PersonQualities.php:31
+msgid "Library systems"
+msgstr "Kirjastojärjestelmä"
+
+#: src/Util/PersonQualities.php:32
+msgid "Literature"
+msgstr "Kaunokirjallisuus"
+
+#: src/Util/PersonQualities.php:33
+msgid "Media education"
+msgstr "Mediakasvatus"
+
+#: src/Util/PersonQualities.php:34
+msgid "Mobile libraries"
+msgstr "Kirjastoautot"
+
+#: src/Util/PersonQualities.php:35
+msgid "Music library work"
+msgstr "Musiikkikirjastotyö"
+
+#: src/Util/PersonQualities.php:36
+msgid "Pedagogy"
+msgstr "Pedagogiikka"
+
+#: src/Util/PersonQualities.php:37
+msgid "Remote services"
+msgstr "Kaukopalvelu"
+
+#: src/Util/PersonQualities.php:38
+msgid "Seeking library work"
+msgstr "Hakeutuva kirjastotoiminta"
+
+#: src/Util/PersonQualities.php:39
+msgid "Statistics"
+msgstr "Tilastot"
+
+#: src/Util/PersonQualities.php:40
+msgid "Web services"
+msgstr "Verkkopalvelut"
+
+#: src/Util/PersonQualities.php:41
+msgid "Youth library work"
+msgstr "Nuortenkirjastotyö"
+
+#: src/Util/PersonQualities.php:43
+msgid "Collections"
+msgstr "Kokoelmapalvelut"
+
+#: src/Util/PersonQualities.php:44
+msgid "Customer service"
+msgstr "Asiakaspalvelu"
+
+#: src/Util/PersonQualities.php:45
+msgid "Materials purchases"
+msgstr "Aineistonhankinta"
+
+#: src/Util/PersonQualities.php:46
+msgid "Materials selection"
+msgstr "Aineistonvalinta"
+
+#: src/Util/RegionalLibraries.php:15
+msgid "Åland Islands Provincial Library area"
+msgstr "Ahvenanmaan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:16
+msgid "Southern Savo Provincial Library area"
+msgstr "Etelä-Savon maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:17
+msgid "Häme Provincial Library area"
+msgstr "Hämeen maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:18
+msgid "Kainuu Provincial Library area"
+msgstr "Kainuun maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:19
+msgid "Central Finland Provincial Library area"
+msgstr "Keski-Suomen maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:20
+msgid "Central Library"
+msgstr "Keskuskirjasto"
+
+#: src/Util/RegionalLibraries.php:21
+msgid "Kokkola Provincial Library area"
+msgstr "Kokkolan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:22
+msgid "Kouvola Provincial Library area"
+msgstr "Kouvolan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:23
+msgid "Lahti Provincial Library area"
+msgstr "Lahden maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:24
+msgid "Lappeenranta Provincial Library area"
+msgstr "Lappeenrannan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:25
+msgid "Lapland Provincial Library area"
+msgstr "Lapin maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:26
+msgid "Oulu Provincial Library area"
+msgstr "Oulun maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:27
+msgid "Pirkanmaa Provincial Library area"
+msgstr "Pirkanmaan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:28
+msgid "North-Karelia Provincial Library area"
+msgstr "Pohjois-Karjalan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:29
+msgid "Northern Savo Provincial Library area"
+msgstr "Pohjois-Savon maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:30
+msgid "Satakunta Provincial Library area"
+msgstr "Satakunnan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:31
+msgid "Seinäjoki Provincial Library area"
+msgstr "Seinäjoen maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:32
+msgid "Uusimaa Provincial Library area"
+msgstr "Uudenmaan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:33
+msgid "Vaasa Provincial Library area"
+msgstr "Vaasan maakuntakirjastoalue"
+
+#: src/Util/RegionalLibraries.php:34
+msgid "Provincial Library of Varsinais-Suomi area"
+msgstr "Varsinais-Suomen maakuntakirjastoalue"
+
+#: src/Util/ServiceTypes.php:15
+msgid "Room"
+msgstr "Huone"
+
+#: src/Util/ServiceTypes.php:16
+msgid "Hardware"
+msgstr "Laite"
+
+#: src/Util/ServiceTypes.php:17 config/entities.config.php:175
+msgid "Service"
+msgstr "Palvelu"
+
+#: src/Util/ServiceTypes.php:18
+msgid "Network"
+msgstr "Verkkopalvelu"
+
+#: src/Util/ServiceTypes.php:19
+msgid "Collection"
+msgstr "Kokoelma"
+
+#: src/Util/OrganisationTypes.php:16
+msgid "Mobile library stop"
+msgstr "Kirjastoauton pysäkki"
+
+#: src/Util/OrganisationTypes.php:17
+msgid "Department"
+msgstr "Osasto"
+
+#: src/Util/OrganisationTypes.php:18
+msgid "Concentrated service"
+msgstr "Keskitetty palvelu"
+
+#: src/Util/OrganisationTypes.php:19
+msgid "Library facility"
+msgstr "Kirjastolaitos"
+
+#: src/Util/OrganisationTypes.php:20
+msgid "Archive"
+msgstr "Arkisto"
+
+#: src/Util/OrganisationTypes.php:21
+msgid "Museum"
+msgstr "Museo"
+
+#: src/Util/OrganisationTypes.php:22
+msgid "Other organisation"
+msgstr "Muu organisaatio"
+
+#: src/Validator/UniqueValue.php:38
+msgid "The value exists in database and has to be unique."
+msgstr "Arvo on jo tietokannassa ja sen täytyy olla uniikki."
+
+#: src/Validator/Entity/NoRecursion.php:50
+msgid "Selected value is invalid because it causes recursion."
+msgstr "Rekursiovirhe"
+
+#: src/Validator/Coordinates.php:28
+msgid ""
+"Coordinates have to be defined as a pair of numbers, for example: 20.12345, "
+"51.09876"
+msgstr ""
+"Koordinaatit täytyy ilmoittaa numeropareina, esimerkiksi 20.12345, 51.09876"
+
+#: src/EntityPluginManager.php:136
+msgid ""
+"You are going to remove this organisation record completely. Do you want to "
+"continue?"
+msgstr ""
+"Olet poistamassa tämän organisaatiotietueen pysyvästi. Haluatko varmasti "
+"jatkaa?"
+
+#: config/navigation.config.php:4
+msgid "Frontpage"
+msgstr "Etusivu"
+
+#: config/navigation.config.php:5
+msgid "Periods"
+msgstr "Aukioloajat"
+
+#: config/navigation.config.php:30 config/navigation.config.php:122
+msgid "Personnel"
+msgstr "Henkilökunta"
+
+#: config/navigation.config.php:34
+msgid "Provincial Libraries"
+msgstr "Maakuntakirjastot"
+
+#: config/navigation.config.php:42
+msgid "Schedule Templates"
+msgstr "Aukiolomallit"
+
+#: config/navigation.config.php:46
+msgid "Service Templates"
+msgstr "Palvelumallit"
+
+#: config/navigation.config.php:54
+msgid "Service Types (H)"
+msgstr "Palvelutyypit (H)"
+
+#: config/navigation.config.php:68 config/navigation.config.php:143
+#: config/navigation.config.php:203
+msgid "« Frontpage"
+msgstr "« Etusivulle"
+
+#: config/navigation.config.php:72 config/navigation.config.php:147
+#: config/navigation.config.php:207
+msgid "Basic Details"
+msgstr "Perustiedot"
+
+#: config/navigation.config.php:82 config/navigation.config.php:157
+#: config/navigation.config.php:212
+msgid "Addresses"
+msgstr "Osoitteet"
+
+#: config/navigation.config.php:92
+msgid "Transit directions"
+msgstr "Liikenneyhteydet"
+
+#: config/navigation.config.php:97 config/navigation.config.php:167
+msgid "Miscellaneous"
+msgstr "Muut tiedot"
+
+#: config/navigation.config.php:192
+msgid "Mobile stops"
+msgstr "Kirjastoauton pysäkit"
+
+#: config/entities.config.php:51 ../FinnaExt/src/Form/ConsortiumData.php:94
+msgid "Notification"
+msgstr "Ilmoitus"
+
+#: config/entities.config.php:80
+msgid "Period"
+msgstr "Jakso"
+
+#: config/entities.config.php:95
+msgid "Person"
+msgstr "Henkilö"
+
+#: config/entities.config.php:109
+msgid "Phone Number"
+msgstr "Puhelinnumero"
+
+#: config/entities.config.php:200
+msgid "Service Type"
+msgstr "Palvelutyyppi"
+
+#: config/entities.config.php:227
+msgid "User"
+msgstr "Käyttäjä"
+
+#: config/entities.config.php:254
+msgid "Link Group"
+msgstr "Linkkiryhmä"
+
+#: view/kirkanta/entity/list.phtml:6
+msgid "Drag row"
+msgstr ""
+
+#: view/kirkanta/entity/list.phtml:20
+msgid "Actions"
+msgstr "Toiminnot"
+
+#: view/kirkanta/organisation/add.phtml:5
+msgid "Add organisation"
+msgstr "Lisää organisaatio"
+
+#: view/kirkanta/organisation/show.phtml:4
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: view/kirkanta/partial/pager.phtml:5
+msgid "Pagination"
+msgstr "Sivutus"
+
+#: view/kirkanta/partial/pager.phtml:12 view/kirkanta/partial/pager.phtml:33
+#, php-format
+msgid "Jump to page %d"
+msgstr "Siirry sivulle %d"
+
+#: view/kirkanta/partial/pager.phtml:43
+#, php-format
+msgid "%d results"
+msgstr "%d tulosta"
+
+#: view/kirkanta/partial/period-day-times-row.phtml:10
+#: view/kirkanta/partial/period-day-times-row.phtml:11
+msgid "Remove this time"
+msgstr "Poista aika"
+
+#: view/kirkanta/partial/period-day-times-row.phtml:13
+#: view/kirkanta/partial/period-day-times-row.phtml:14
+#: view/kirkanta/partial/period-days-row.phtml:25
+#: view/kirkanta/partial/period-days-row.phtml:26
+msgid "Insert new time"
+msgstr "Lisää aika"
+
+#: view/kirkanta/partial/period-days-row.phtml:24
+msgid "Library closed"
+msgstr "Kirjasto suljettu"
+
+#: view/kirkanta/partial/period-days-row.phtml:38
+msgid "Edit description..."
+msgstr "Muokkaa kuvausta..."
+
+#: view/kirkanta/partial/schedules-preview.phtml:13
+msgid "Mon"
+msgstr "Ma"
+
+#: view/kirkanta/partial/schedules-preview.phtml:14
+msgid "Tue"
+msgstr "Ti"
+
+#: view/kirkanta/partial/schedules-preview.phtml:15
+msgid "Wed"
+msgstr "Ke"
+
+#: view/kirkanta/partial/schedules-preview.phtml:16
+msgid "Thu"
+msgstr "To"
+
+#: view/kirkanta/partial/schedules-preview.phtml:17
+msgid "Fri"
+msgstr "Pe"
+
+#: view/kirkanta/partial/schedules-preview.phtml:18
+msgid "Sat"
+msgstr "La"
+
+#: view/kirkanta/partial/schedules-preview.phtml:19
+msgid "Sun"
+msgstr "Su"
+
+#: view/kirkanta/partial/custom-data.phtml:2
+msgid "New data"
+msgstr "Uusi tieto"
+
+#: view/kirkanta/system/tools.phtml:6
+msgid "Export documents"
+msgstr "Lataa dokumentteja"
+
+#: view/kirkanta/service-type/usage.phtml:5
+msgid "Empty"
+msgstr "Tyhjä"
+
+#: view/kirkanta/service-type/usage.phtml:28
+msgid "Service template"
+msgstr "Palvelumalli"
+
+#: view/layout/layout.phtml:44
+msgid "Tools"
+msgstr "Työkalut"
+
+#: view/layout/layout.phtml:47
+msgid "Help"
+msgstr "Apua"
+
+#: view/layout/layout.phtml:50
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: view/layout/layout.phtml:59
+msgid "Library Information Management Interface – Libraries.fi"
+msgstr "Kirjastotietokannan hallintaliittymä – Kirjastot.fi"
+
+#: view/user/change_email.phtml:36 view/user/profile.phtml:20
+msgid "Change email"
+msgstr "Vaihda sähköpostiosoite"
+
+#: view/user/change_email.phtml:40
+msgid "Email address changed successfully."
+msgstr "Sähköpostiosoite vaihdettu onnistuneesti"
+
+#: view/user/change_email.phtml:52 view/user/change_password.phtml:52
+msgid "Confirm change"
+msgstr "Vahvista muutos"
+
+#: view/user/change_email.phtml:53
+msgid "Confirm with password"
+msgstr "Vahvista muutos salasanallasi"
+
+#: view/user/change_password.phtml:40
+msgid "Password changed successfully."
+msgstr "Salasana vaihdettu onnistuneesti."
+
+#: view/user/change_password.phtml:53
+msgid "Confirm with current password"
+msgstr "Vahvista muutos nykyisellä salasanallasi"
+
+#: view/user/login.phtml:9 Module.php:171
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+#: view/user/profile.phtml:1
+msgid "User profile"
+msgstr "Käyttäjätiedot"
+
+#: view/user/profile.phtml:12
+msgid "User group"
+msgstr "Käyttäjäryhmä"
+
+#: Module.php:170
+msgid "Password"
+msgstr "Salasana"
+
+#: Module.php:182
+msgid "New email"
+msgstr "Uusi sähköpostiosoite"
+
+#: Module.php:183
+msgid "Verify email"
+msgstr "Vahvista sähköpostiosoite"
+
+#: Module.php:194
+msgid "New password"
+msgstr "Uusi salasana"
+
+#: Module.php:195
+msgid "Verify password"
+msgstr "Vahvista salasana"
+
+#: ../KirkantaPtv/src/Controller/PtvController.php:71
+msgid "Configuration saved"
+msgstr "Asetukset tallennettu"
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:19
+msgid "Enable synchronization"
+msgstr "Ota käyttöön"
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:20
+msgid "Check to allow synchronization with PTV."
+msgstr "Valitse salliaksesi dokumentin synkronoinnin PTV:hen."
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:31
+msgid "Document state"
+msgstr "Dokumentin tila"
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:32
+msgid "Document state in PTV."
+msgstr "Dokumentin tila PTV:ssä."
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:32
+msgid "For now, it is not possible to synchronize documents as drafts."
+msgstr "Toistaiseksi ei ole mahdollista tallentaa dokumentteja luonnostilassa."
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:34
+msgid "Draft"
+msgstr "Luonnos"
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:44
+msgid "Synchronize automatically"
+msgstr "Synkronoi automaattisesti"
+
+#: ../KirkantaPtv/src/Form/EntityConfigForm.php:45
+msgid ""
+"Should Kirkanta synchronize this document with PTV periodically. If "
+"disabled, you will have to trigger synchronization manually."
+msgstr ""
+"Jos valittu, Kirkanta päivittää dokumentin PTV:hen automaattisesti "
+"säännöllisin väliajoin. Muussa tapauksessa joudut aktivoimaan "
+"päivitystapahtuman manuaalisesti."
+
+#: ../KirkantaPtv/view/status-notification.phtml:15
+msgid "PTV synchronization is disabled for this document."
+msgstr "Tätä dokumenttia ei viedä PTV:hen."
+
+#: ../KirkantaPtv/view/status-notification.phtml:18
+msgid "This document will be synchronized with PTV automatically."
+msgstr "Tämä tietue päivitetään PTV:hen automaattisesti."
+
+#: ../KirkantaPtv/view/status-notification.phtml:21
+msgid "You will need to trigger PTV synchronization manually."
+msgstr "Sinun täytyy ajaa PTV-synkronointi manuaalisesti."
+
+#: ../KirkantaPtv/view/status-notification.phtml:22
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:11
+msgid "Synchronize"
+msgstr "Synkronoi"
+
+#: ../KirkantaPtv/view/status-notification.phtml:26
+msgid "This document has not been configured for PTV yet."
+msgstr "Tätä dokumenttia ei vielä ole konfiguroitu PTV-siirtoa varten."
+
+#: ../KirkantaPtv/view/status-notification.phtml:29
+msgid "Configuration"
+msgstr "Asetukset"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:8
+msgid ""
+"Here you can configure how this document will be synchronized to PTV (Suomi."
+"fi)."
+msgstr ""
+"Täällä voit hallita dokumentin asetuksia PTV-siirtoa varten. (Suomi.fi)"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:13
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:21
+#: ../KirkantaPtv/view/kirkanta/ptv/results.phtml:5
+msgid "Status"
+msgstr "Tila"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:19
+msgid "Last sync"
+msgstr "Viimeisin päivitys"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:25
+msgid "Settings"
+msgstr "Asetukset"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/configure.phtml:31
+msgid "Validation"
+msgstr "Validointi"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:3
+msgid "Run synchronization"
+msgstr "Suorita synkronointi"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:16
+#: ../KirkantaPtv/view/kirkanta/ptv/results.phtml:2
+msgid "Results"
+msgstr "Tulokset"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:26
+#: ../KirkantaPtv/view/kirkanta/ptv/results.phtml:8
+msgid "Errors"
+msgstr "Virheet"
+
+#: ../KirkantaPtv/view/kirkanta/ptv/synchronize.phtml:44
+msgid "Return"
+msgstr "Palaa"
+
+#: ../FinnaExt/src/Form/ConsortiumData.php:48
+msgid "Finna ID"
+msgstr "Finna ID"
+
+#: ../FinnaExt/src/Form/ConsortiumData.php:56
+msgid "Finna coverage"
+msgstr "Finna-kattavuus"
+
+#: ../FinnaExt/src/Form/ConsortiumData.php:67
+msgid "Default service point"
+msgstr "Oletuspalvelupiste"
+
+#: ../FinnaExt/src/Form/ConsortiumData.php:80
+msgid "Usage info"
+msgstr "Käytön ohjeet"
+
+#: ../KirkantaExport/src/Form/AddressesForm.php:58
+msgid "Group by city"
+msgstr "Ryhmittele kunnan mukaan"
+
+#: ../KirkantaExport/src/Form/AddressesForm.php:66
+msgid "With coordinates"
+msgstr "Sisällytä koordinaatit"
+
+#: ../KirkantaExport/src/Form/AddressesForm.php:74
+msgid "Download"
+msgstr "Lataa"
+
+#: ../KirkantaExport/view/kirkanta/export/index.phtml:6
+msgid "Library addresses"
+msgstr "Kirjastojen osoitteet"
+
+#~ msgid "Area"
+#~ msgstr "Alue"

@@ -1,0 +1,2249 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "analysis": {
+        "analyzer": {
+          "whitespace_only": {
+            "tokenizer": "whitespace",
+            "filter": "lowercase"
+          },
+          "lowercase": {
+            "tokenizer": "keyword",
+            "filter": "lowercase"
+          }
+        }
+      }
+    }
+  },
+  "aliases": {
+    "library_directory": {}
+  },
+  "mappings" : {
+    "consortium": {
+      "properties" : {
+        "link_groups": {
+          "properties": {
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "identifier" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "links": {
+              "properties" : {
+                "name" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "url" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "description" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "homepage" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "id" : {
+          "type" : "long"
+        },
+        "special" : {
+          "type" : "boolean"
+        },
+        "name" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            }
+          }
+        },
+        "slug" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "logo": {
+          "properties" : {
+            "huge" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "large" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "medium" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "small" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "finna": {
+          "properties": {
+            "finna_id": {
+              "type": "string",
+              "analyzer": "whitespace_only"
+            },
+            "finna_coverage": {
+              "type": "byte"
+            },
+            "service_points": {
+              "type": "long"
+            },
+            "usage_info": {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "notification": {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            }
+          }
+        },
+        "meta" : {
+          "properties" : {
+            "created" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            },
+            "modified" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            }
+          }
+        }
+      }
+    },
+    "organisation" : {
+      "properties" : {
+        "id" : {
+          "type" : "long"
+        },
+        "parent" : {
+          "type" : "long"
+        },
+        "name" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            }
+          }
+        },
+        "short_name" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            }
+          }
+        },
+        "slug" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "type" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "branch_type" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "web_library" : {
+          "type" : "string",
+          "index": "no"
+        },
+        "address" : {
+          "properties" : {
+            "area" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                }
+              }
+            },
+            "city" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                }
+              }
+            },
+            "coordinates" : {
+              "type" : "geo_point"
+            },
+            "street" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "zipcode" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "building" : {
+          "properties" : {
+            "building_architect" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            },
+            "building_name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "construction_year" : {
+              "type" : "long"
+            },
+            "interior_designer" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            }
+          }
+        },
+        "city": {
+          "properties" : {
+            "consortium" : {
+              "properties" : {
+                "link_groups": {
+                  "properties": {
+                    "name" : {
+                      "properties" : {
+                        "en" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "fi" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "ru" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "se" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "sv" : {
+                          "type" : "string",
+                          "index" : "no"
+                        }
+                      }
+                    },
+                    "identifier" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "links": {
+                      "properties" : {
+                        "name" : {
+                          "properties" : {
+                            "en" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "fi" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "ru" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "se" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "sv" : {
+                              "type" : "string",
+                              "index" : "no"
+                            }
+                          }
+                        },
+                        "url" : {
+                          "properties" : {
+                            "en" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "fi" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "ru" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "se" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "sv" : {
+                              "type" : "string",
+                              "index" : "no"
+                            }
+                          }
+                        },
+                        "description" : {
+                          "properties" : {
+                            "en" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "fi" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "ru" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "se" : {
+                              "type" : "string",
+                              "index" : "no"
+                            },
+                            "sv" : {
+                              "type" : "string",
+                              "index" : "no"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "homepage" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "id" : {
+                  "type" : "long",
+                  "index": "no"
+                },
+                "special" : {
+                  "type" : "boolean",
+                  "index": "no"
+                },
+                "name" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "slug" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "logo": {
+                  "properties" : {
+                    "huge" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "large" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "medium" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "small" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "finna": {
+                  "properties": {
+                    "finna_id": {
+                      "type": "string",
+                      "index": "no"
+                    },
+                    "finna_coverage": {
+                      "type": "byte",
+                      "index": "no"
+                    },
+                    "service_points": {
+                      "type": "long",
+                      "index": "no"
+                    },
+                    "usage_info": {
+                      "properties" : {
+                        "en" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "fi" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "ru" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "se" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "sv" : {
+                          "type" : "string",
+                          "index" : "no"
+                        }
+                      }
+                    },
+                    "notification": {
+                      "properties" : {
+                        "en" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "fi" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "ru" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "se" : {
+                          "type" : "string",
+                          "index" : "no"
+                        },
+                        "sv" : {
+                          "type" : "string",
+                          "index" : "no"
+                        }
+                      }
+                    }
+                  }
+                },
+                "meta" : {
+                  "properties" : {
+                    "created" : {
+                      "type" : "date",
+                      "format" : "dateOptionalTime",
+                      "index": "no"
+                    },
+                    "modified" : {
+                      "type" : "date",
+                      "format" : "dateOptionalTime",
+                      "index": "no"
+                    }
+                  }
+                }
+              }
+            },
+            "id" : {
+              "type" : "long"
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "provincial_library" : {
+              "properties" : {
+                "id" : {
+                  "type" : "long"
+                },
+                "name" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    }
+                  }
+                },
+                "province" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    }
+                  }
+                },
+                "slug" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    }
+                  }
+                }
+              }
+            },
+            "region" : {
+              "properties" : {
+                "id" : {
+                  "type" : "long"
+                },
+                "name" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "analyzer" : "whitespace_only"
+                    }
+                  }
+                },
+                "slug" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "not_analyzed"
+                    }
+                  }
+                }
+              }
+            },
+            "slug" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                }
+              }
+            }
+          }
+        },
+        "email" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "consortium": {
+          "properties" : {
+            "homepage" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "id" : {
+              "type" : "long"
+            },
+            "special" : {
+              "type" : "boolean"
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "slug" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                }
+              }
+            },
+            "logo": {
+              "properties" : {
+                "huge" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "large" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "medium" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "small" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "finna": {
+              "properties": {
+                "finna_id": {
+                  "type": "string",
+                  "analyzer": "whitespace_only"
+                },
+                "usage_info": {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "notification": {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "extra" : {
+          "properties" : {
+            "transit": {
+              "properties" : {
+                "buses": {
+                  "type": "string",
+                  "index": "no"
+                },
+                "trams": {
+                  "type": "string",
+                  "index": "no"
+                },
+                "trains": {
+                  "type": "string",
+                  "index": "no"
+                },
+                "parking_instructions" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index": "no"
+                    }
+                  }
+                },
+                "transit_directions" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index": "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index": "no"
+                    }
+                  }
+                }
+              }
+            },
+            "data": {
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "index": "not_analyzed"
+                },
+                "title": {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                },
+                "value": {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "index" : "no"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "index" : "no"
+                    }
+                  }
+                }
+              }
+            },
+            "building" : {
+              "properties" : {
+                "building_architect" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                },
+                "building_name" : {
+                  "properties" : {
+                    "en" : {
+                      "type" : "string",
+                      "analyzer": "whitespace_only"
+                    },
+                    "fi" : {
+                      "type" : "string",
+                      "analyzer": "whitespace_only"
+                    },
+                    "ru" : {
+                      "type" : "string",
+                      "analyzer": "whitespace_only"
+                    },
+                    "se" : {
+                      "type" : "string",
+                      "analyzer": "whitespace_only"
+                    },
+                    "sv" : {
+                      "type" : "string",
+                      "analyzer": "whitespace_only"
+                    }
+                  }
+                },
+                "construction_year" : {
+                  "type" : "long"
+                },
+                "interior_designer" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                }
+              }
+            },
+            "description" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer": "whitespace_only"
+                }
+              }
+            },
+            "founded" : {
+              "type" : "long"
+            },
+            "identificator" : {
+              "type": "string",
+              "analyzer": "lowercase"
+            },
+            "isil" : {
+              "type" : "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "homepage" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "links" : {
+          "properties" : {
+            "description" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index": "no"
+                }
+              }
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index": "no"
+                }
+              }
+            },
+            "url" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index": "no"
+                }
+              }
+            }
+          }
+        },
+        "mail_address" : {
+          "properties" : {
+            "area" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+                }
+              }
+            },
+            "box_number" : {
+              "type" : "long"
+            },
+            "street" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index": "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index": "no"
+                }
+              }
+            },
+            "zipcode" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "persons" : {
+          "properties" : {
+            "email" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "first_name" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "id" : {
+              "type" : "long"
+            },
+            "is_head" : {
+              "type" : "boolean",
+              "index": "no"
+            },
+            "job_title" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "last_name" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "phone" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "qualities" : {
+              "type" : "string",
+              "index": "no"
+            }
+          }
+        },
+        "phone_numbers" : {
+          "properties" : {
+            "description" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "number" : {
+              "type" : "string",
+              "index": "no"
+            }
+          }
+        },
+        "pictures" : {
+          "properties" : {
+            "author" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "description" : {
+              "type" : "object",
+              "index": "no"
+            },
+            "files" : {
+              "properties" : {
+                "huge" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "large" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "medium" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "small" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "license" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "year" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "services" : {
+          "properties" : {
+            "description" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "email" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "for_loan" : {
+              "type" : "boolean"
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "website": {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "phone_number" : {
+              "type" : "string",
+              "index": "no"
+            },
+            "picture" : {
+              "properties" : {
+                "huge" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "large" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "medium" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "small" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "price" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "se" : {
+                  "type" : "string",
+                  "index" : "no"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "index" : "no"
+                }
+              }
+            },
+            "short_description" : {
+              "properties" : {
+                "en" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "fi" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "ru" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "se" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                },
+                "sv" : {
+                  "type" : "string",
+                  "analyzer" : "whitespace_only"
+                }
+              }
+            },
+            "type" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "meta" : {
+          "properties" : {
+            "created" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            },
+            "modified" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            }
+          }
+        }
+      }
+    },
+    "service" : {
+      "properties" : {
+        "description" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only"
+            }
+          }
+        },
+        "for_loan" : {
+          "type" : "boolean"
+        },
+        "helmet_type_priority" : {
+          "type" : "long"
+        },
+        "id" : {
+          "type" : "long"
+        },
+        "meta" : {
+          "properties" : {
+            "created" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            },
+            "modified" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            }
+          }
+        },
+        "name" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer" : "whitespace_only",
+              "fields": {
+                "raw": {
+                  "type": "string",
+                  "analyzer": "lowercase"
+                }
+              }
+            }
+          }
+        },
+        "picture" :  {
+          "properties" : {
+            "huge" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "large" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "medium" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "small" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "price" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "short_description" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "fi" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "ru" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "se" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            },
+            "sv" : {
+              "type" : "string",
+              "analyzer": "whitespace_only"
+            }
+          }
+        },
+        "slug" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "type" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        }
+      }
+    },
+    "person" : {
+      "properties" : {
+        "email" : {
+          "type" : "string",
+          "index" : "no"
+        },
+        "first_name" : {
+          "type" : "string",
+          "analyzer" : "whitespace_only"
+        },
+        "id" : {
+          "type" : "long"
+        },
+        "is_head" : {
+          "type" : "boolean"
+        },
+        "job_title" : {
+          "properties" : {
+            "en" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "fi" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "ru" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "se" : {
+              "type" : "string",
+              "index" : "no"
+            },
+            "sv" : {
+              "type" : "string",
+              "index" : "no"
+            }
+          }
+        },
+        "last_name" : {
+          "type" : "string",
+          "analyzer" : "whitespace_only"
+        },
+        "meta" : {
+          "properties" : {
+            "created" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            },
+            "modified" : {
+              "type" : "date",
+              "format" : "dateOptionalTime"
+            }
+          }
+        },
+        "organisation" : {
+          "type" : "long"
+        },
+        "phone" : {
+          "type" : "string",
+          "index" : "no"
+        },
+        "qualities" : {
+          "type" : "string",
+          "analyzer": "whitespace_only"
+        }
+      }
+    }
+  }
+}

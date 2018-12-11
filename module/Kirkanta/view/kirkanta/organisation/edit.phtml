@@ -1,0 +1,24 @@
+<?php if ($this->formMessages()->hasMessages()): ?>
+  <div class="status-messages">
+    <?= $this->formMessages()->render('form.success') ?>
+    <?= $this->formMessages()->render('form.error') ?>
+  </div>
+<?php endif ?>
+
+<?php if ($this->ptv): ?>
+  <?= $this->ptv ?>
+<?php endif ?>
+
+<?= $this->samuForm()->openTag($form) ?>
+<?= $this->render('kirkanta/organisation/form-header') ?>
+<?= $this->samuForm()->fields($form, $fields) ?>
+
+<div class="form-actions">
+  <?php foreach ($form->getActions() as $button): ?>
+    <?php if ($button['name'] != 'delete'): ?>
+      <?= $this->samuFormButton($form->get($button['name'])) ?>
+    <?php endif ?>
+  <?php endforeach ?>
+</div>
+
+<?= $this->samuForm()->closeTag($form) ?>

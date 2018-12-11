@@ -1,0 +1,229 @@
+{
+  "took" : 7,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 43,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "anders",
+      "_score" : 1.0, "_source" : {"name":"Anders","url":"https://anders.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "fredrika",
+      "_score" : 1.0, "_source" : {"name":"Fredrika","url":"http://www.fredrika.net/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "jjr",
+      "_score" : 1.0, "_source" : {"name":"Toenper\u00e4","url":"http://www.toenpera.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "kirkas",
+      "_score" : 1.0, "_source" : {"name":"KIRKAS","url":"http://www.kirkas.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "oiva",
+      "_score" : 1.0, "_source" : {"name":"Oiva","url":"http://oiva.kirjas.to/Oiva?formid=find2"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "outi",
+      "_score" : 1.0, "_source" : {"name":"OUTI","url":"http://oukasrv6.ouka.fi:8001/Intro?formid=findf"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "sata",
+      "_score" : 1.0, "_source" : {"name":"Satakirjastot","url":"http://www.satakirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "seitti",
+      "_score" : 1.0, "_source" : {"name":"Seitti","url":"https://seitti.seinajoki.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "helmet",
+      "_score" : 1.0, "_source" : {"name":"HelMet","url":"http://www.helmet.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "heili",
+      "_score" : 1.0, "_source" : {"name":"Heili-kirjastot","url":"http://www.heilikirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "karpalo",
+      "_score" : 1.0, "_source" : {"name":"Karpalo","url":"http://karpalo.kirjas.to/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "katrina",
+      "_score" : 1.0, "_source" : {"name":"Katrina","url":"http://www.bibliotek.ax/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "keski",
+      "_score" : 1.0, "_source" : {"name":"Keski-kirjastot","url":"http://www.keskikirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "loisto",
+      "_score" : 1.0, "_source" : {"name":"Loisto","url":"http://loimaankaupunki.kirjas.to/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "louna",
+      "_score" : 1.0, "_source" : {"name":"Louna","url":"http://www.lounakirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "priima",
+      "_score" : 1.0, "_source" : {"name":"Priima","url":"http://priima.imatra.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "rutakko",
+      "_score" : 1.0, "_source" : {"name":"Rutakko","url":"http://kirjasto.iisalmi.fi:8001/Intro?formid=form2"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "savotta",
+      "_score" : 1.0, "_source" : {"name":"Savotta","url":"http://savotta.kirjas.to/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "vanaja",
+      "_score" : 1.0, "_source" : {"name":"VANAMO","url":"https://vanamo.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "jokunen",
+      "_score" : 1.0, "_source" : {"name":"Vaara-kirjastot","url":"http://vaarakirjastot.fi"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "kirkes",
+      "_score" : 1.0, "_source" : {"name":"Kirkes","url":"http://www.kirkeskirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "kyyti",
+      "_score" : 1.0, "_source" : {"name":"Kyyti","url":"http://www.kyyti.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "lappi",
+      "_score" : 1.0, "_source" : {"name":"Lapin kirjasto","url":"http://www.lapinkirjasto.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "lukas",
+      "_score" : 1.0, "_source" : {"name":"Lukas","url":"https://lukas.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "lukki",
+      "_score" : 1.0, "_source" : {"name":"Lukki-kirjastot","url":"http://lukki.verkkokirjasto.fi"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "pielinen",
+      "_score" : 1.0, "_source" : {"name":"Pielinen","url":"http://vk-info.nurmes.fi:8000/Intro?formid=form2"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "piki",
+      "_score" : 1.0, "_source" : {"name":"PIKI","url":"https://piki.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "salomo",
+      "_score" : 1.0, "_source" : {"name":"Salomo","url":"http://kirjastot.salonseutu.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "tiekko",
+      "_score" : 1.0, "_source" : {"name":"Tiekk\u00f6","url":"http://www.tiekko.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "yty",
+      "_score" : 1.0, "_source" : {"name":"YTY-kirjastot","url":"http://arena.jarvinet.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "atimo",
+      "_score" : 1.0, "_source" : {"name":"Atimo","url":"http://kirjasto.kuusamo.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "blanka",
+      "_score" : 1.0, "_source" : {"name":"Blanka","url":"http://www.blanka.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "ekirjasto",
+      "_score" : 1.0, "_source" : {"name":"Agricola-kirjastot","url":"http://weborigo.loviisa.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "keskeinen",
+      "_score" : 1.0, "_source" : {"name":"Keskeinen","url":"http://keskeinen.dataseed.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "kiri",
+      "_score" : 1.0, "_source" : {"name":"Kiri","url":"http://www.kirikirjastot.fi/opac/default.aspx"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "lakia",
+      "_score" : 1.0, "_source" : {"name":"Lakia","url":"http://lakia.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "lastu",
+      "_score" : 1.0, "_source" : {"name":"LASTU","url":"http://www.lastukirjastot.fi/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "porsse",
+      "_score" : 1.0, "_source" : {"name":"Porsse","url":"http://porsse.porvoo.fi/Porsse?formid=find2&sesid=1164965058&ulang=fin"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "kainet",
+      "_score" : 1.0, "_source" : {"name":"Kainet","url":"http://kainet.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "krannit",
+      "_score" : 1.0, "_source" : {"name":"Krannit","url":"https://krannit.verkkokirjasto.fi/web/arena"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "pyra",
+      "_score" : 1.0, "_source" : {"name":"NELI-NETTI","url":"http://raahe.kirjas.to/"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "ratamo",
+      "_score" : 1.0, "_source" : {"name":"RATAMO","url":"http://193.184.58.34/Ratamo?formid=find2"}
+    }, {
+      "_index" : "libdir_documents_01",
+      "_type" : "consortium",
+      "_id" : "vaski",
+      "_score" : 1.0, "_source" : {"name":"VASKI","url":"https://www.vaskikirjastot.fi/web/arena"}
+    } ]
+  }
+}

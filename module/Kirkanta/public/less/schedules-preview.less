@@ -1,0 +1,32 @@
+table.schedules-preview {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead th {
+    border-bottom: 1px solid #ddd;
+  }
+  th, td {
+    text-align: center;
+  }
+  td {
+    padding: 0.3em;
+  }
+  td:nth-child(7),
+  td:nth-child(8) {
+    // background-color: rgba(150, 150, 150, 0.1);
+    color: #aaa;
+  }
+}
+
+@media(max-width: @screen-sm-max) {
+  table.schedules-preview {
+    thead {
+      display: none;
+    }
+  }
+  table.schedules-preview.table-1 {
+    thead {
+      display: table-header-group;
+    }
+  }
+}

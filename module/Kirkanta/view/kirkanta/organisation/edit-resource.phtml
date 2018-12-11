@@ -1,0 +1,11 @@
+<?php $form->prepare() ?>
+
+<?php if ($this->formMessages()->hasMessages()): ?>
+  <div class="status-messages">
+    <?= $this->formMessages()->render('form.success') ?>
+    <?= $this->formMessages()->render('form.error') ?>
+  </div>
+<?php endif ?>
+
+<h2><?= $title ?></h2>
+<?= $this->samuForm($form) ?>

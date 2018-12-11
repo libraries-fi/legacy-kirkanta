@@ -1,0 +1,44 @@
+<?php
+$query = $_GET;
+?>
+<nav>
+  <p class="sr-only"><?= $this->tr('Pagination') ?></p>
+  <ul class="pagination pagination-sm">
+    <li>
+      <?php if ($this->current > 1): ?>
+        <?php
+        $jump_to = max($this->firstPageInRange - 6, $this->first);
+        ?>
+        <a aria-label="<?= sprintf($this->tr('Jump to page %d'), $jump_to) ?>" href="<?= $this->url(null, [], ['query' => ['page' => $jump_to] + $query], true) ?>">
+          <span aria-hidden="true">«</span>
+        </a>
+      <?php else: ?>
+        <a>
+          <span aria-hidden="true">«</span>
+        </a>
+      <?php endif ?>
+    </li>
+
+    <?php foreach ($this->pagesInRange as $i): ?>
+      <li<?= $i == $this->current ? ' class="active"' : '' ?>>
+        <a href="<?= $this->url(null, [], ['query' => ['page' => $i] + $query], true) ?>"><?= $i ?></a>
+      </li>
+    <?php endforeach ?>
+
+    <li>
+      <?php if ($this->current < $this->last): ?>
+        <?php
+        $jump_to = min($this->lastPageInRange + 5, $this->last);
+        ?>
+        <a aria-label="<?= sprintf($this->tr('Jump to page %d'), $jump_to) ?>" href="<?= $this->url(null, [], ['query' => ['page' => $jump_to] + $query], true) ?>">
+          <span aria-hidden="true">»</span>
+        </a>
+      <?php else: ?>
+        <a>
+          <span aria-hidden="true">»</span>
+        </a>
+      <?php endif ?>
+    </li>
+  </ul>
+  <span class="pull-right"><?= sprintf($this->tr('%d results'), $this->totalItemCount) ?></span>
+</nav>

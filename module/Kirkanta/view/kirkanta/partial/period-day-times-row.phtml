@@ -1,0 +1,17 @@
+<div class="row times-row">
+  <div class="col-xs-12 col-md-4 col-lg-3">
+    <?= $this->samuFormRow($fieldset->get('opens')) ?>
+  </div>
+  <div class="col-xs-10 col-md-4 col-lg-3">
+    <?= $this->samuFormRow($fieldset->get('closes')) ?>
+  </div>
+  <div class="col-xs-2 col-md-4 col-lg-6">
+    <label class="filler">Actions</label>
+    <button type="button" class="input-days-times-remove-time btn btn-link glyphicon glyphicon-minus-sign" title="<?= $this->tr('Remove this time') ?>">
+      <span class="sr-only"><?= $this->tr('Remove this time') ?></span>
+    </button>
+    <button type="button" class="input-days-times-add-time btn btn-link glyphicon glyphicon-plus-sign" title="<?= $this->tr('Insert new time') ?>">
+      <span class="sr-only"><?= $this->tr('Insert new time') ?></span>
+    </button>
+  </div>
+</div>

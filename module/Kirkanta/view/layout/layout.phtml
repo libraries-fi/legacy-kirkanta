@@ -1,0 +1,106 @@
+<?php
+$this->doctype('HTML5');
+$this->headMeta()->setCharset('UTF-8');
+$this->headTitle()->append('Kirkanta')->setSeparator(' - ');
+$this->headMeta('IE=edge', 'X-UA-Compatible', 'http-equiv');
+$this->headMeta('width=device-width, initial-scale=1', 'viewport');
+$this->headMeta('noindex,nofollow', 'robots');
+?>
+<?= $this->doctype() . PHP_EOL ?>
+<html lang="<?= $language ?>">
+<head>
+  <?= $this->headMeta() ?>
+  <?= $this->headTitle() ?>
+
+  <?php if (APP_ENV == 'dev'): ?>
+    <style type="text/less">
+      @import url("/dev/bootstrap.css");
+      @import url("/dev/theme.less");
+    </style>
+    <script>var less = {async: true};</script>
+    <script src="/dev/less.js"></script>
+  <?php else: ?>
+    <style>
+      @import url("<?= $this->assetUrl('dist/bootstrap/bootstrap.css') ?>");
+      @import url("<?= $this->assetUrl('dist/bootstrap/bootstrap-theme.css') ?>");
+      @import url("<?= $this->assetUrl('dist/style.css') ?>");
+    </style>
+  <?php endif ?>
+</head>
+<body class="no-js">
+  <?php if ($this->identity()): ?>
+    <nav id="hud" class="nav-hud">
+      <div class="container">
+        <ul class="hud-links pull-left">
+          <li>
+            <a href="<?= $this->url('zfcuser') ?>"><?= $this->zfcUserDisplayName() ?></a>
+          </li>
+          <li>
+            <a href="<?= $this->url('account/notifications') ?>"><?= $this->tr('Notifications') . (count($this->notifications) ? sprintf(' (%d)', count($notifications)) : '') ?></a>
+          </li>
+        </ul>
+        <ul class="hud-links pull-right">
+          <li>
+            <a href="<?= $this->url('tools') ?>"><?= $this->tr('Tools') ?></a>
+          </li>
+          <li>
+            <a href="<?= $this->url('help') ?>"><?= $this->tr('Help') ?></a>
+          </li>
+          <li>
+            <a href="<?= $this->url('zfcuser/logout') ?>"><?= $this->tr('Logout') ?></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <?php endif ?>
+  <header id="l-header" class="page-header">
+    <div class="container">
+      <h1>Kirkanta
+        <small><?= $this->tr('Library Information Management Interface – Libraries.fi') ?></small>
+      </h1>
+    </div>
+  </header>
+  <div id="l-main" class="container">
+    <div class="status-messages">
+      <?= $this->flashMessenger()->render('success') ?>
+      <?= $this->flashMessenger()->render('error') ?>
+    </div>
+    <?php if ($this->navigation): ?>
+      <div class="col-sm-3 col-md-2 nav-side">
+        <nav>
+          <?= $this->navigation->menu()->setUlClass('nav nav-pills nav-stacked')->setMaxDepth(0) ?>
+        </nav>
+      </div>
+      <div class="col-sm-9 col-md-10">
+        <?= $this->navigation('breadcrumbs')->menu()->setUlClass('breadcrumb main-crumb') ?>
+        <main>
+          <?= $this->block_layout_main_top ?>
+          <?= $this->content ?>
+        </main>
+      </div>
+    <?php else: ?>
+      <div class="col-sm-12 col-md-12">
+        <?php if ($this->identity()): ?>
+          <?= $this->navigation('breadcrumbs')->menu()->setUlClass('breadcrumb main-crumb') ?>
+        <?php endif ?>
+        <main>
+          <?= $this->block_page_top ?>
+          <?= $this->content ?>
+        </main>
+      </div>
+    <?php endif ?>
+  </div>
+
+  <script>
+    document.body.className = document.body.className.replace(/\bno-js\b/, "");
+  </script>
+
+  <?php if (APP_ENV == 'dev'): ?>
+    <script src="<?= $this->basePath('/dev/libs.js') ?>"></script>
+    <script src="<?= $this->basePath('/dev/script.js') ?>"></script>
+  <?php elseif ($language): ?>
+    <script src="<?= $this->assetUrl(sprintf('/dist/script-%s.js', $language)) ?>"></script>
+  <?php endif ?>
+
+</body>
+</html>

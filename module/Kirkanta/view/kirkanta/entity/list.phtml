@@ -1,0 +1,30 @@
+<?php
+
+if ($this->list_sortable) {
+  $this->list->addColumn('weight', '');
+  $this->list->transform('weight', function($w, $i, $o) {
+    $title = $this->tr('Drag row');
+
+    return sprintf('
+      <a class="drag-handle" title="%s" data-drag-id="%d">
+          <i class="glyphicon glyphicon-move"></i>
+      </a>
+      ', $title, $o['id']);
+  });
+}
+
+?>
+<h2><?= $this->title ?></h2>
+<div class="entity-list" <?php if (!empty($this->list_sortable)): ?>data-sortable-list<?php endif ?>>
+  <div class="list-header">
+    <h3 class="sr-only"><?= $this->tr('Actions') ?></h3>
+    <ul class="actions pull-right">
+      <?= $this->render('kirkanta/entity/partials/actions.phtml', ['actions' => $actions]) ?>
+    </ul>
+  </div>
+  <?= $this->block_top ?>
+  <?= $this->list ?>
+  <?php if ($this->list_pager): ?>
+    <?= $this->pager($this->list_pager) ?>
+  <?php endif ?>
+</div>

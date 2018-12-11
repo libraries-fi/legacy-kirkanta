@@ -1,0 +1,33 @@
+{
+  "name": "Library Directory Admin",
+  "version": "1.0.0",
+  "authors": [
+    "Samu Juvonen <samu.juvonen@kirjastot.fi>"
+  ],
+  "description": "Management interface for hakemisto.kirjastot.fi",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "handlebars": "~3.0.0",
+    "less": "~2.4.0",
+    "moment": "~2.9.0",
+    "underscore": "~1.8.2",
+    "requirejs": "~2.1.17",
+    "requirejs-i18n": "~2.0.6",
+    "requirejs-text": "~2.0.14",
+    "ckeditor": "~4.5.3",
+    "i18n": "requirejs-i18n#^2.0.6"
+  }
+}

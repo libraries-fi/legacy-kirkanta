@@ -1,0 +1,14 @@
+<div class="kirkanta-slider">
+  <a class="lds-grain"></a>
+  <div class="lds-bar"></div>
+
+  <form class="lds-ticks">
+    <ul>
+      {{#each options}}
+        <li>
+          <a class="slider-value" data-value="{{ @key }}" data-name="{{ ../name }}">{{ this }}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </form>
+</div>
