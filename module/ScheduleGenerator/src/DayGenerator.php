@@ -160,7 +160,7 @@ class DayGenerator
             if ($period->getSection() == 'default') {
                 $data['meta'] = ['period' => $period->getId()];
             } else {
-                $data['info'] = ['fi' => null];
+                $data['info'] = ['fi' => null, 'sv' => null, 'en' => null, 'se' => null, 'ru' => null];
             }
 
             if (empty($times)) {
