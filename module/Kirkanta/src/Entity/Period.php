@@ -213,7 +213,7 @@ class Period extends TranslatableEntity implements GroupOwnershipAwareInterface,
     public function getWeight()
     {
         if ($dt = $this->getValidUntil()) {
-            return $dt->diff($this->getValidFrom())->days;
+            return $dt->diff($this->getValidFrom())->days + 1;
         } else {
             return 9999;
         }
