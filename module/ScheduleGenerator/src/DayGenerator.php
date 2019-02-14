@@ -128,8 +128,11 @@ class DayGenerator
         $to = clone $to;
         $range = new DatePeriod($from, new DateInterval('P1D'), $to->add(new DateInterval('P1D')));
         $source = $period->getDays();
-        $index = $period->getWeight() < 7 ? 0 : $from->format('N') - 1;
         $days = [];
+
+        // $index = $period->getWeight() < 7 ? 0 : $from->format('N') - 1;
+        $index = $period->getValidFrom()->diff($from)->format('%a') % count($period->getDays());
+
 
         foreach ($range as $dt) {
             $date = $dt->format('Y-m-d');
