@@ -130,9 +130,9 @@ class DayGenerator
         $source = $period->getDays();
         $days = [];
 
-        // $index = $period->getWeight() < 7 ? 0 : $from->format('N') - 1;
-        $index = $period->getValidFrom()->diff($from)->format('%a') % count($period->getDays());
-
+        $offset = $period->getValidFrom()->format('N');
+        $delta = $period->getValidFrom()->diff($from)->format('%a');
+        $index =  ($delta + $offset - 1) % count($period->getDays());
 
         foreach ($range as $dt) {
             $date = $dt->format('Y-m-d');
