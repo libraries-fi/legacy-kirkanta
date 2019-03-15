@@ -892,7 +892,7 @@ class Organisation extends TranslatableEntity implements GroupOwnershipAwareInte
 
     public function getCustomData()
     {
-        return $this->custom_data;
+        return $this->custom_data ?: [];
     }
 
     public function setCustomData($data)
