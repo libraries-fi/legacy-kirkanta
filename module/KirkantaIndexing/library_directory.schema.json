@@ -2241,7 +2241,7 @@
         },
         "qualities" : {
           "type" : "string",
-          "analyzer": "whitespace_only"
+          "index": "no"
         }
       }
     }
