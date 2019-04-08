@@ -131,10 +131,10 @@ class DayGenerator
         $days = [];
 
         if ($period->getWeight() < 7) {
-            $index = $period->getValidFrom()->diff($from)->d;
+            $index = $period->getValidFrom()->diff($from)->format('%a');
         } else {
             $offset = $period->getValidFrom()->format('N') - 1;
-            $delta = $period->getValidFrom()->diff($from)->d;
+            $delta = $period->getValidFrom()->diff($from)->format('%a');
             $index = ($delta + $offset) % count($period->getDays());
         }
 
