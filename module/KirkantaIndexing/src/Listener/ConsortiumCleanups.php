@@ -66,7 +66,7 @@ class ConsortiumCleanups implements SharedListenerAggregateInterface
         }
     }
 
-    protected function injectCustomData(array &$document, Consortium $organisation)
+    protected function injectCustomData(array &$document, Consortium $consortium)
     {
         if ($finna = $consortium->getFinnaData()) {
             // Machine-readable data
