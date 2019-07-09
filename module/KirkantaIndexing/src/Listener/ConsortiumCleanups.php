@@ -68,27 +68,31 @@ class ConsortiumCleanups implements SharedListenerAggregateInterface
 
     protected function injectCustomData(array &$document, Consortium $organisation)
     {
-        // Machine-readable data
-        $document['extra']['data'] = [];
+        if ($finna = $consortium->getFinnaData()) {
+            // Machine-readable data
+            $new_data['extra']['data'] = [];
 
-        // Human-readable data
-        $document['extra']['info'] = [];
+            // Human-readable data
+            $new_data['extra']['info'] = [];
 
-        foreach ($organisation->getCustomData() as $item) {
-            if ($item instanceof ArrayObject) {
-                $item = $item->getArrayCopy();
-            }
-            $item = Translations::mergeTranslations($item);
-            if (!is_null($item['id'])) {
-                $document['extra']['data'][] = $item;
+            foreach ($organisation->getCustomData() as $item) {
+                if ($item instanceof ArrayObject) {
+                    $item = $item->getArrayCopy();
+                }
+                $item = Translations::mergeTranslations($item);
+                if (!is_null($item['id'])) {
+                    $new_data['extra']['data'][] = $item;
+                }
+
+                if (!is_null($item['title']['fi']) && !is_null($item['value']['fi'])) {
+                    $new_data['extra']['info'][] = [
+                        'title' => $item['title'],
+                        'value' => $item['value'],
+                    ];
+                }
             }
 
-            if (!is_null($item['title']['fi']) && !is_null($item['value']['fi'])) {
-                $document['extra']['info'][] = [
-                    'title' => $item['title'],
-                    'value' => $item['value'],
-                ];
-            }
+            $document['finna'] += $new_data;
         }
     }
 }
