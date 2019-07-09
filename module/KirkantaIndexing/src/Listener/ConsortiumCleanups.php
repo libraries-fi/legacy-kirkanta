@@ -75,7 +75,7 @@ class ConsortiumCleanups implements SharedListenerAggregateInterface
             // Human-readable data
             $new_data['extra']['info'] = [];
 
-            foreach ($organisation->getCustomData() as $item) {
+            foreach ($finna->getCustomData() as $item) {
                 if ($item instanceof ArrayObject) {
                     $item = $item->getArrayCopy();
                 }
