@@ -42,6 +42,8 @@ class ConsortiumCleanups implements SharedListenerAggregateInterface
 
         $document = &$event->document;
 
+        $this->injectCustomData($document, $event->object);
+
         if (!empty($document['logo'])) {
             $sizes = ['small', 'medium'];
             $document['logo'] = $this->pictureFileSizes($document, 'logo', $sizes);
@@ -61,6 +63,32 @@ class ConsortiumCleanups implements SharedListenerAggregateInterface
                 $files[$size] = sprintf('%s/%s/%s', $url_prefix, $size, $data[$key]);
             }
             return $files;
+        }
+    }
+
+    protected function injectCustomData(array &$document, Organisation $organisation)
+    {
+        // Machine-readable data
+        $document['extra']['data'] = [];
+
+        // Human-readable data
+        $document['extra']['info'] = [];
+
+        foreach ($organisation->getCustomData() as $item) {
+            if ($item instanceof ArrayObject) {
+                $item = $item->getArrayCopy();
+            }
+            $item = Translations::mergeTranslations($item);
+            if (!is_null($item['id'])) {
+                $document['extra']['data'][] = $item;
+            }
+
+            if (!is_null($item['title']['fi']) && !is_null($item['value']['fi'])) {
+                $document['extra']['info'][] = [
+                    'title' => $item['title'],
+                    'value' => $item['value'],
+                ];
+            }
         }
     }
 }
