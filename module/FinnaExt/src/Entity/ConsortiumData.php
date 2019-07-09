@@ -56,6 +56,16 @@ class ConsortiumData implements TranslatableEntityInterface
      */
     private $notification;
 
+    /**
+     * @ORM\Column(type="json_array")
+     */
+    private $custom_data;
+
+    public function getCustomData()
+    {
+        return $this->custom_data ?: [];
+    }
+
     public function getConsortium()
     {
         return $this->consortium;
